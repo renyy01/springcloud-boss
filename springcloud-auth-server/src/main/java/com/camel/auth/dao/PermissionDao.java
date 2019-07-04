@@ -1,6 +1,6 @@
 package com.camel.auth.dao;
 
-import com.camel.common.entity.Permission;
+import com.camel.core.entity.Permission;
 
 import java.util.List;
 

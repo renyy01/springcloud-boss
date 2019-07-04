@@ -50,7 +50,7 @@ security:
       user-authorization-uri: http://${APPLICATION_IP}:${server.port}/auth/oauth/authorize
       client-id: web
     resource:
-      user-info-uri:  http://${APPLICATION_IP}:${server.port}/auth/api/member
+      user-info-uri:  http://${APPLICATION_IP}:${server.port}/auth/session/me
       prefer-token-info: false
 
 #----------------------超时配置-------------------

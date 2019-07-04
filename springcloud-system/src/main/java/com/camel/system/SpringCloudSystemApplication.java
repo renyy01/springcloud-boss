@@ -1,6 +1,6 @@
 package com.camel.system;
 
-import lombok.extern.slf4j.Slf4j;
+import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -31,6 +31,7 @@ import org.springframework.security.config.annotation.method.configuration.Enabl
  * @since 1.0
  * @date 2019/7/4
  **/
+@MapperScan("com.canmel.system.mapper")
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableGlobalMethodSecurity(prePostEnabled = true)

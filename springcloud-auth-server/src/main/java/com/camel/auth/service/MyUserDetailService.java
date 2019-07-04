@@ -1,9 +1,9 @@
 package com.camel.auth.service;
 
 import com.camel.auth.dao.MemberDao;
-import com.camel.common.entity.Member;
-import com.camel.common.entity.Permission;
-import com.camel.common.entity.Role;
+import com.camel.core.entity.Member;
+import com.camel.core.entity.Permission;
+import com.camel.core.entity.Role;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

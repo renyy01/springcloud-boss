@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.camel.system.mapper.SysLogMapper">
+    <resultMap id="BaseResultMap" type="com.camel.system.model.SysLog">
+        <id property="id" column="id" jdbcType="INTEGER"></id>
+        <result property="ip" column="ip" jdbcType="VARCHAR"></result>
+		<result property="userId" column="user_id" jdbcType="INTEGER"></result>
+		<result property="username" column="username" jdbcType="VARCHAR"></result>
+		<result property="time" column="time" jdbcType="VARCHAR"></result>
+		<result property="method" column="method" jdbcType="VARCHAR"></result>
+		<result property="operation" column="operation" jdbcType="VARCHAR"></result>
+		<result property="params" column="params" jdbcType="VARCHAR"></result>
+		<result property="gmtCreate" column="gmt_create" jdbcType="VARCHAR"></result>
+		<result property="module" column="module" jdbcType="VARCHAR"></result>
+    </resultMap>
+
+	<sql id="BASE_SQL">
+		sys_log.id,
+		sys_log.user_id,
+		sys_log.username,
+		sys_log.time,
+		sys_log.ip,
+		sys_log.method,
+		sys_log.params,
+		DATE_FORMAT(sys_log.gmt_create, '%Y-%c-%d %h:%i:%s') gmt_create,
+		sys_log.operation,
+		sys_log.module
+	</sql>
+
+    <select id="list" resultMap="BaseResultMap">
+        SELECT
+			<include refid="BASE_SQL"></include>
+		FROM sys_log
+		<where>
+			<if test="username != null and username != ''">AND sys_log.username like concat('%', #{username} ,'%')</if>
+			<if test="method != null and method != ''">AND sys_log.method like concat('%', #{method} ,'%')</if>
+            <if test="module != null and module != ''">AND sys_log.module like concat('%', #{module} ,'%')</if>
+			<if test="userId != null and userId != ''">AND sys_log.user_id like concat('%', #{userId} ,'%')</if>
+		</where>
+		ORDER BY sys_log.id DESC
+    </select>
+</mapper>

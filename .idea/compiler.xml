@@ -8,8 +8,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springcloud-auth-server" />
         <module name="springcloud-common" />
+        <module name="springcloud-core" />
         <module name="springcloud-email" />
         <module name="springcloud-eureka-server" />
+        <module name="springcloud-redis" />
         <module name="springcloud-system" />
         <module name="springcloud-zuul-getway" />
       </profile>
@@ -19,8 +21,10 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="springcloud-auth-server" options="-parameters" />
       <module name="springcloud-common" options="-parameters" />
+      <module name="springcloud-core" options="-parameters" />
       <module name="springcloud-email" options="-parameters" />
       <module name="springcloud-eureka-server" options="-parameters" />
+      <module name="springcloud-redis" options="-parameters" />
       <module name="springcloud-system" options="-parameters" />
       <module name="springcloud-zuul-getway" options="-parameters" />
     </option>

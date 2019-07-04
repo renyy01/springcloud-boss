@@ -1,9 +1,9 @@
 spring:
   application:
-    name: eshop-member
+    name: springcloud-system
 
 server:
-  port: 1201
+  port: 9001
 
 eureka:
   instance:
@@ -11,11 +11,11 @@ eureka:
     instance-id: ${spring.cloud.client.ip-address}:${server.port}
   client:
     service-url:
-      defaultZone: http://${APPLICATION_IP}:1111/eureka/
+      defaultZone: http://${APPLICATION_IP}:8888/eureka/
 
 security:
   oauth2:
     resource:
-      id: eshop-member
-      user-info-uri: http://${APPLICATION_IP}:1202/auth/api/member
+      id: springcloud-system
+      user-info-uri: http://${APPLICATION_IP}:8080/auth/api/member
       prefer-token-info: false

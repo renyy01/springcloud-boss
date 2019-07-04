@@ -1,5 +1,5 @@
 server:
-  port: 1202
+  port: 8080
 
 spring:
   application:
@@ -12,18 +12,18 @@ eureka:
     instance-id: ${spring.cloud.client.ip-address}:${server.port}
   client:
     service-url:
-      defaultZone: http://${APPLICATION_IP}:1111/eureka/
+      defaultZone: http://${APPLICATION_IP}:8888/eureka/
 
 #--------------------Zuul-----------------------
 zuul:
   routes:
     member:
-      path: /member/**
-      serviceId: eshop-member
+      path: /system/**
+      serviceId: springcloud-system
       sensitiveHeaders: "*"
     auth:
       path: /auth/**
-      serviceId: eshop-auth
+      serviceId: springcloud-auth
       sensitiveHeaders: "*"
   retryable: false
   ignored-services: "*"

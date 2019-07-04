@@ -1,9 +1,9 @@
 server:
-  port: 1203
+  port: 7070
 
 spring:
   application:
-    name: eshop-auth
+    name: springcloud-auth
   redis:
     database: 0
     host: ${REDIS_HOST}
@@ -42,7 +42,7 @@ eureka:
     instance-id: ${spring.cloud.client.ip-address}:${server.port}
   client:
     service-url:
-      defaultZone: http://${APPLICATION_IP}:1111/eureka/
+      defaultZone: http://${APPLICATION_IP}:8888/eureka/
 
 mybatis:
   type-aliases-package: com.curise.eshop.common.entity

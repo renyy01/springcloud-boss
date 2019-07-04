@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: eshop-gateway
+    name: springcloud-gateway
 
 #--------------------eureka---------------------
 eureka:

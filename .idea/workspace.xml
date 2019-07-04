@@ -2,23 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f21194d6-4da2-4ac1-95e9-d28f0d95cba4" name="Default Changelist" comment="11">
-      <change afterPath="$PROJECT_DIR$/springcloud-auth-server/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/enums/BaseEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/enums/ProcessStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/enums/ResultEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/model/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/model/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/model/process/ActivitiEndCallBack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/model/process/ActivitiForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/model/process/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/model/process/UserTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/utils/ApplicationUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/utils/IoUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/utils/ResultUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-email/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-email/src/main/resources/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-email/src/main/resources/application-test.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-email/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../db/eshop_member.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../eshop/.idea/compiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../eshop/.idea/encodings.xml" beforeDir="false" />
@@ -130,28 +113,40 @@
       <change beforePath="$PROJECT_DIR$/../eshop/springcloud-zuul-getway/target/classes/com/curise/eshop/gateway/config/SecurityConfig.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/config/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/config/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/controller/SystemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/controller/SessionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/dao/MemberDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/dao/MemberDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/dao/PermissionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/dao/PermissionDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/dao/RoleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/dao/RoleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/service/MyUserDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/service/MyUserDetailService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springcloud-auth-server/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-auth-server/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-auth-server/src/main/resources/mybatis/MemberMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-auth-server/src/main/resources/mybatis/MemberMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-auth-server/src/main/resources/mybatis/PermissionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-auth-server/src/main/resources/mybatis/PermissionMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-auth-server/src/main/resources/mybatis/RoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-auth-server/src/main/resources/mybatis/RoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-auth-server/src/main/resources/templates/login.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/springcloud-auth-server/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-auth-server/target/classes/application-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springcloud-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-common/src/main/java/com/curise/eshop/common/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/entity/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-common/src/main/java/com/curise/eshop/common/entity/Permission.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/entity/Permission.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-common/src/main/java/com/curise/eshop/common/entity/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/entity/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-common/src/main/java/com/curise/eshop/common/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/entity/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-common/src/main/java/com/curise/eshop/common/enumeration/ResultCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/enumeration/ResultCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-common/target/classes/com/curise/eshop/common/entity/Member.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-common/target/classes/com/curise/eshop/common/entity/Permission.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-common/target/classes/com/curise/eshop/common/entity/Result.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-common/target/classes/com/curise/eshop/common/entity/Role.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-common/target/classes/com/curise/eshop/common/enumeration/ResultCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/controller/SystemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/entity/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/entity/Permission.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/entity/Permission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/entity/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/entity/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/entity/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/enumeration/ResultCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/enumeration/ResultCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/enums/BaseEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/enums/ProcessStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/enums/ResultEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/model/BaseEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/model/Result.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/model/process/ActivitiEndCallBack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/model/process/ActivitiForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/model/process/Comment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/model/process/UserTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/utils/ApplicationUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/utils/IoUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/utils/ResultUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-email/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-email/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-email/target/classes/com/curise/eshop/email/EmailApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/controller/SystemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-system/target/classes/com/curise/eshop/MemberApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-system/target/classes/com/curise/eshop/controller/MemberController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-system/target/classes/com/curise/eshop/member/MemberApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-system/target/classes/com/curise/eshop/member/config/ResourceServerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-system/target/classes/com/curise/eshop/member/controller/MemberController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-zuul-getway/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-zuul-getway/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-zuul-getway/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-zuul-getway/target/classes/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-zuul-getway/target/classes/com/curise/eshop/ZuulApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-zuul-getway/target/classes/com/curise/eshop/gateway/ZuulApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-zuul-getway/target/classes/com/curise/eshop/gateway/config/SecurityConfig.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -312,36 +307,36 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="23" />
-          <entry key="java" value="38" />
+          <entry key="java" value="46" />
           <entry key="txt" value="2" />
-          <entry key="xml" value="49" />
-          <entry key="yml" value="19" />
+          <entry key="xml" value="70" />
+          <entry key="yml" value="64" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="38" />
+          <entry key="JAVA" value="46" />
           <entry key="PLAIN_TEXT" value="25" />
-          <entry key="XML" value="49" />
-          <entry key="YAML" value="19" />
+          <entry key="XML" value="70" />
+          <entry key="YAML" value="64" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
           <entry key="html" value="1" />
-          <entry key="java" value="47" />
-          <entry key="xml" value="3" />
-          <entry key="yml" value="5" />
+          <entry key="java" value="52" />
+          <entry key="xml" value="6" />
+          <entry key="yml" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="HTML" value="1" />
-          <entry key="JAVA" value="47" />
-          <entry key="XML" value="3" />
-          <entry key="YAML" value="5" />
+          <entry key="JAVA" value="52" />
+          <entry key="XML" value="6" />
+          <entry key="YAML" value="9" />
         </counts>
       </usages-collector>
     </session>
@@ -349,41 +344,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springcloud-zuul-getway/src/main/java/com/camel/gateway/SpringCloudZuulApplication.java">
+        <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/resources/application-dev.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/SpringCloudAuthServerApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="30" column="16" lean-forward="true" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-              <folding>
-                <element signature="e#1503#1504#0" expanded="true" />
-                <element signature="e#1586#1587#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/dao/PermissionDao.java">
+        <entry file="file://$PROJECT_DIR$/springcloud-email/src/main/java/com/camel/email/SpringCloudEmailApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/dao/RoleDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            <state relative-caret-position="270">
+              <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -392,16 +365,7 @@
         <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/resources/mybatis/RoleMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="68" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/dao/MemberDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+              <caret line="4" column="64" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -409,8 +373,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/resources/mybatis/MemberMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+            <state relative-caret-position="60">
+              <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springcloud-email/src/main/resources/application-dev.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springcloud-zuul-getway/src/main/resources/application-dev.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -419,30 +401,43 @@
         <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/resources/mybatis/PermissionMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="76" selection-start-line="4" selection-start-column="76" selection-end-line="4" selection-end-column="76" />
+              <caret line="4" column="66" selection-start-line="4" selection-start-column="66" selection-end-line="4" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/controller/SessionController.java">
+        <entry file="file://$PROJECT_DIR$/springcloud-eureka-server/src/main/java/com/camel/eureka/server/SpringCloudEurekaServerApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+            <state relative-caret-position="225">
+              <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1549#1550#0" expanded="true" />
-                <element signature="e#1578#1579#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/controller/SessionController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="122">
+              <caret line="35" column="27" lean-forward="true" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.6.RELEASE/spring-core-5.0.6.RELEASE.jar!/org/springframework/util/ReflectionUtils.class">
+        <entry file="file://$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/SpringCloudSystemApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="377" column="17" lean-forward="true" selection-start-line="377" selection-start-column="17" selection-end-line="377" selection-end-column="17" />
+            <state relative-caret-position="225">
+              <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -483,6 +478,7 @@
       <find>com.curise.eshop.common.entity.Result</find>
       <find>memberContr</find>
       <find>memberController</find>
+      <find>ESHOP-GATEWAY</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -510,7 +506,6 @@
         <option value="$PROJECT_DIR$/springcloud-eureka-server/src/main/java/com/curise/eshop/server/SpringCloudEurekaServerApplication.java" />
         <option value="$PROJECT_DIR$/springcloud-zuul-getway/src/main/java/com/camel/gateway/config/SecurityConfig.java" />
         <option value="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/controller/MemberController.java" />
-        <option value="$PROJECT_DIR$/springcloud-zuul-getway/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/springcloud-system/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/springcloud-email/src/main/java/com/camel/email/EmailApplication.java" />
         <option value="$PROJECT_DIR$/springcloud-email/src/main/java/com/camel/email/SpringCloudEmailApplication.java" />
@@ -529,22 +524,23 @@
         <option value="$PROJECT_DIR$/springcloud-zuul-getway/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/SpringCloudAuthServerApplication.java" />
         <option value="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/SpringCloudSystemApplication.java" />
-        <option value="$PROJECT_DIR$/springcloud-zuul-getway/src/main/java/com/camel/gateway/SpringCloudZuulApplication.java" />
         <option value="$PROJECT_DIR$/springcloud-eureka-server/src/main/java/com/camel/eureka/server/SpringCloudEurekaServerApplication.java" />
-        <option value="$PROJECT_DIR$/springcloud-email/src/main/resources/application-dev.yml" />
-        <option value="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/controller/SessionController.java" />
         <option value="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/controller/SystemController.java" />
         <option value="$PROJECT_DIR$/springcloud-common/src/main/java/com/curise/eshop/common/entity/process/ActivitiForm.java" />
         <option value="$PROJECT_DIR$/springcloud-common/src/main/java/com/curise/eshop/common/model/process/ActivitiForm.java" />
         <option value="$PROJECT_DIR$/springcloud-common/src/main/java/com/curise/eshop/common/enums/ResultEnum.java" />
         <option value="$PROJECT_DIR$/springcloud-common/src/main/java/com/curise/eshop/common/utils/PaginationUtil.java" />
         <option value="$PROJECT_DIR$/springcloud-common/src/main/java/com/curise/eshop/common/utils/ResultUtil.java" />
-        <option value="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/config/security/SecurityConfig.java" />
         <option value="$PROJECT_DIR$/springcloud-common/src/main/java/com/curise/eshop/common/model/BaseEntity.java" />
+        <option value="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/config/security/SecurityConfig.java" />
         <option value="$PROJECT_DIR$/springcloud-auth-server/src/main/resources/application-dev.yml" />
-        <option value="$PROJECT_DIR$/springcloud-auth-server/src/main/resources/mybatis/PermissionMapper.xml" />
+        <option value="$PROJECT_DIR$/springcloud-zuul-getway/src/main/java/com/camel/gateway/SpringCloudZuulApplication.java" />
         <option value="$PROJECT_DIR$/springcloud-auth-server/src/main/resources/mybatis/MemberMapper.xml" />
+        <option value="$PROJECT_DIR$/springcloud-auth-server/src/main/resources/mybatis/PermissionMapper.xml" />
         <option value="$PROJECT_DIR$/springcloud-auth-server/src/main/resources/mybatis/RoleMapper.xml" />
+        <option value="$PROJECT_DIR$/springcloud-email/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/springcloud-zuul-getway/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/controller/SessionController.java" />
       </list>
     </option>
   </component>
@@ -772,9 +768,7 @@
               <item name="springcloud-auth-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springcloud-boss" type="b2602c69:ProjectViewProjectNode" />
@@ -782,9 +776,8 @@
               <item name="springcloud-auth-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springcloud-boss" type="b2602c69:ProjectViewProjectNode" />
@@ -824,35 +817,25 @@
             <path>
               <item name="springcloud-boss" type="b2602c69:ProjectViewProjectNode" />
               <item name="springcloud-boss" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-email" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springcloud-boss" type="b2602c69:ProjectViewProjectNode" />
               <item name="springcloud-boss" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud-zuul-getway" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-boss" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-boss" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud-zuul-getway" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-email" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springcloud-boss" type="b2602c69:ProjectViewProjectNode" />
               <item name="springcloud-boss" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud-zuul-getway" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-email" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springcloud-boss" type="b2602c69:ProjectViewProjectNode" />
               <item name="springcloud-boss" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud-zuul-getway" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-email" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -860,16 +843,87 @@
             <path>
               <item name="springcloud-boss" type="b2602c69:ProjectViewProjectNode" />
               <item name="springcloud-boss" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud-zuul-getway" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-email" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="email" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springcloud-boss" type="b2602c69:ProjectViewProjectNode" />
               <item name="springcloud-boss" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud-zuul-getway" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-email" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-boss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-boss" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-eureka-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-boss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-boss" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-eureka-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-boss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-boss" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-eureka-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-boss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-boss" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-system" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-boss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-boss" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-boss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-boss" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-boss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-boss" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-boss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-boss" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-boss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-boss" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-boss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-boss" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-system" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -878,8 +932,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -890,7 +944,7 @@
     <property name="SearchEverywhereHistoryKey" value="com.curise.eshop.common.entity&#9;PSI&#9;JAVA://com.curise.eshop.common.model.BaseEntity" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562229258109" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562231156723" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/eshop-common/src/main/java/com/curise/eshop/common" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -1009,19 +1063,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringCloudEurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="springcloud-eureka-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.camel.eureka.server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.camel.eureka.server.SpringCloudEurekaServerApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SpringCloudSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="springcloud-system" />
       <extension name="coverage">
@@ -1050,17 +1091,15 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.SpringCloudEmailApplication" />
-      <item itemvalue="Spring Boot.SpringCloudEurekaServerApplication" />
+      <item itemvalue="Spring Boot.SpringCloudZuulApplication" />
       <item itemvalue="Spring Boot.SpringCloudAuthServerApplication" />
       <item itemvalue="Spring Boot.SpringCloudSystemApplication" />
-      <item itemvalue="Spring Boot.SpringCloudZuulApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.SpringCloudAuthServerApplication" />
         <item itemvalue="Spring Boot.SpringCloudZuulApplication" />
         <item itemvalue="Spring Boot.SpringCloudSystemApplication" />
-        <item itemvalue="Spring Boot.SpringCloudEurekaServerApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -1100,10 +1139,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56180000" />
+    <option name="totallyTimeSpent" value="57379000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26752505" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1155,37 +1195,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="22" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/springcloud-zuul-getway/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
-          <folding>
-            <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-system/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springcloud-auth-server/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
           <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="63" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/SpringCloudSystemApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1203,71 +1216,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-eureka-server/src/main/java/com/camel/eureka/server/SpringCloudEurekaServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springcloud-email/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-email/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-email/src/main/java/com/camel/email/SpringCloudEmailApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/controller/SystemController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/config/ResourceServerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="16" selection-start-line="16" selection-end-line="34" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-common/src/main/java/com/curise/eshop/common/entity/process/UserTask.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-common/src/main/java/com/curise/eshop/common/entity/BaseEntity.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-common/src/main/java/com/curise/eshop/common/entity/process/Comment.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-common/src/main/java/com/curise/eshop/common/entity/BaseProcessPaginationEntity.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-common/src/main/java/com/curise/eshop/common/entity/BasePaginationEntity.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-common/src/main/java/com/curise/eshop/common/entity/process/ActivitiEndCallBack.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-common/src/main/java/com/curise/eshop/common/entity/process/ActivitiForm.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-common/src/main/java/com/curise/eshop/common/entity/process/UserTask.java" />
+    <entry file="file://$PROJECT_DIR$/springcloud-common/src/main/java/com/curise/eshop/common/entity/BaseEntity.java" />
+    <entry file="file://$PROJECT_DIR$/springcloud-common/src/main/java/com/curise/eshop/common/entity/process/Comment.java" />
+    <entry file="file://$PROJECT_DIR$/springcloud-common/src/main/java/com/curise/eshop/common/entity/BaseProcessPaginationEntity.java" />
+    <entry file="file://$PROJECT_DIR$/springcloud-common/src/main/java/com/curise/eshop/common/entity/BasePaginationEntity.java" />
+    <entry file="file://$PROJECT_DIR$/springcloud-common/src/main/java/com/curise/eshop/common/entity/process/ActivitiEndCallBack.java" />
+    <entry file="file://$PROJECT_DIR$/springcloud-common/src/main/java/com/curise/eshop/common/entity/process/ActivitiForm.java" />
     <entry file="file://$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/model/process/UserTask.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1290,13 +1255,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-common/src/main/java/com/curise/eshop/common/utils/PaginationUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-common/src/main/java/com/curise/eshop/common/utils/PaginationUtil.java" />
     <entry file="file://$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/utils/IoUtils.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1310,20 +1269,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-common/src/main/java/com/curise/eshop/common/model/BaseProcessPaginationEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-common/src/main/java/com/curise/eshop/common/model/BasePaginationEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-common/src/main/java/com/curise/eshop/common/model/BaseProcessPaginationEntity.java" />
+    <entry file="file://$PROJECT_DIR$/springcloud-common/src/main/java/com/curise/eshop/common/model/BasePaginationEntity.java" />
     <entry file="file://$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/model/Result.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1352,13 +1299,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-zuul-getway/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/model/BaseEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1366,25 +1306,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/resources/templates/login.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/config/security/SecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="50" column="3" selection-start-line="50" selection-start-column="3" selection-end-line="50" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/entity/Member.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1412,34 +1335,8 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.6.RELEASE/spring-core-5.0.6.RELEASE.jar!/org/springframework/util/ReflectionUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="377" column="17" lean-forward="true" selection-start-line="377" selection-start-column="17" selection-end-line="377" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-zuul-getway/src/main/java/com/camel/gateway/SpringCloudZuulApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/controller/SessionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1549#1550#0" expanded="true" />
-            <element signature="e#1578#1579#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/resources/mybatis/PermissionMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="76" selection-start-line="4" selection-start-column="76" selection-end-line="4" selection-end-column="76" />
+        <state relative-caret-position="5325">
+          <caret line="377" column="17" selection-start-line="377" selection-start-column="17" selection-end-line="377" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1447,13 +1344,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/resources/mybatis/MemberMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -1471,20 +1361,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/resources/mybatis/RoleMapper.xml">
+    <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/config/security/NoEncryptPasswordEncoder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="68" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
+        <state relative-caret-position="289">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/SpringCloudAuthServerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="30" column="16" lean-forward="true" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+        <state relative-caret-position="195">
+          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
           <folding>
             <element signature="e#1503#1504#0" expanded="true" />
             <element signature="e#1586#1587#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-zuul-getway/src/main/java/com/camel/gateway/SpringCloudZuulApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/controller/SystemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-system/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/config/security/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="56" column="22" lean-forward="true" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-eureka-server/src/main/java/com/camel/eureka/server/SpringCloudEurekaServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/SpringCloudSystemApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/resources/mybatis/MemberMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/resources/mybatis/PermissionMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="66" selection-start-line="4" selection-start-column="66" selection-end-line="4" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/resources/mybatis/RoleMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="64" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-email/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-zuul-getway/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-email/src/main/java/com/camel/email/SpringCloudEmailApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/controller/SessionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="35" column="27" lean-forward="true" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

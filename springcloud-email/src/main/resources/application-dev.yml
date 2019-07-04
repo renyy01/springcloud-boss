@@ -1,6 +1,6 @@
 spring:
   application:
-    name: springcloud-system
+    name: springcloud-email
 
 server:
   port: 9002
@@ -16,6 +16,6 @@ eureka:
 security:
   oauth2:
     resource:
-      id: springcloud-system
+      id: springcloud-email
       user-info-uri: http://${APPLICATION_IP}:8080/auth/api/member
       prefer-token-info: false

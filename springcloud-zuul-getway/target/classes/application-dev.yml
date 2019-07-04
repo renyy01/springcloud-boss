@@ -4,6 +4,12 @@ server:
 spring:
   application:
     name: springcloud-gateway
+  resources:
+    static-locations: classpath:/templates/,classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
+  mvc:
+    static-path-pattern: /**
+  thymeleaf:
+    prefix: classpath:/templates/
 
 #--------------------eureka---------------------
 eureka:

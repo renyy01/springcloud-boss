@@ -1,8 +1,8 @@
 package com.camel.auth.controller;
 
 import com.camel.auth.service.MyUserDetailService;
-import com.curise.eshop.common.entity.Result;
-import com.curise.eshop.common.enumeration.ResultCode;
+import com.camel.common.entity.Result;
+import com.camel.common.enumeration.ResultCode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.oauth2.provider.token.ConsumerTokenServices;
 import org.springframework.web.bind.annotation.*;
@@ -33,8 +33,8 @@ import java.security.Principal;
  * @date 2019/7/4
  **/
 @RestController
-@RequestMapping("/api")
-public class SystemController {
+@RequestMapping("/session")
+public class SessionController {
 
     @Autowired
     private MyUserDetailService userDetailService;

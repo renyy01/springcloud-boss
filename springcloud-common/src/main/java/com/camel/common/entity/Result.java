@@ -1,4 +1,4 @@
-package com.curise.eshop.common.entity;
+package com.camel.common.entity;
 
 import lombok.Data;
 

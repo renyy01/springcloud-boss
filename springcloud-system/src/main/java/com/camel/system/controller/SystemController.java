@@ -16,7 +16,7 @@ import java.security.Principal;
  */
 @RestController
 @RequestMapping("/api")
-public class MemberController {
+public class SystemController {
 
     @GetMapping("hello")
     @PreAuthorize("hasAnyAuthority('hello')")

@@ -1,7 +1,7 @@
 package com.camel.auth.dao;
 
 
-import com.curise.eshop.common.entity.Member;
+import com.camel.common.entity.Member;
 
 /**
  * 〈用户Dao〉

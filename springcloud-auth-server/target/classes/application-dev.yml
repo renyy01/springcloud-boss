@@ -4,6 +4,10 @@ server:
 spring:
   application:
     name: springcloud-auth
+  thymeleaf:
+    prefix: classpath:/templates/
+  resources:
+    static-locations: classpath:/templates/,classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
   redis:
     database: 0
     host: ${REDIS_HOST}
@@ -45,7 +49,7 @@ eureka:
       defaultZone: http://${APPLICATION_IP}:8888/eureka/
 
 mybatis:
-  type-aliases-package: com.curise.eshop.common.entity
+  type-aliases-package: com.camel.common.entity
   configuration:
     map-underscore-to-camel-case: true  #开启驼峰命名,l_name -> lName
     jdbc-type-for-null: NULL

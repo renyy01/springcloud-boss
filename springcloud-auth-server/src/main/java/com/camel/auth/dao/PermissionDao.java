@@ -1,6 +1,6 @@
 package com.camel.auth.dao;
 
-import com.curise.eshop.common.entity.Permission;
+import com.camel.common.entity.Permission;
 
 import java.util.List;
 

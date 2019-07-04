@@ -1,4 +1,4 @@
-package com.curise.eshop.common.enumeration;
+package com.camel.common.enumeration;
 
 
 /**

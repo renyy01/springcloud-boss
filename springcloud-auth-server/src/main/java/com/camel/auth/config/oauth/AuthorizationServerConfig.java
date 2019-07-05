@@ -75,7 +75,6 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
-       // clients.withClientDetails(clientDetails());
         clients.inMemory()
                 .withClient("android")
                 .scopes("read")

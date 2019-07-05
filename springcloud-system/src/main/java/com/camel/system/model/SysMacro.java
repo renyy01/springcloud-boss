@@ -3,7 +3,7 @@ package com.camel.system.model;
 import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.enums.IdType;
-import com.camel.core.entity.BasePaginationEntity;
+import com.camel.common.entity.BasePaginationEntity;
 import com.camel.system.enums.MacroStatus;
 import lombok.Data;
 

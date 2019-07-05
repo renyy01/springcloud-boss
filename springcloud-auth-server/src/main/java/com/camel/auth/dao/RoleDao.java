@@ -1,7 +1,7 @@
 package com.camel.auth.dao;
 
 
-import com.camel.core.entity.Role;
+import com.camel.common.entity.Role;
 
 import java.util.List;
 

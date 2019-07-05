@@ -1,6 +1,6 @@
 package com.camel.system.enums;
 
-import com.camel.core.enums.BaseEnum;
+import com.camel.common.enums.BaseEnum;
 
 
 public enum MacroStatus implements BaseEnum {

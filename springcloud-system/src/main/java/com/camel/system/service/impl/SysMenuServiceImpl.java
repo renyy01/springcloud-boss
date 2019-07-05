@@ -3,7 +3,7 @@ package com.camel.system.service.impl;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.mapper.Wrapper;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
-import com.camel.core.utils.PaginationUtil;
+import com.camel.common.utils.PaginationUtil;
 import com.camel.system.enums.MenuStatus;
 import com.camel.system.enums.MenuType;
 import com.camel.system.mapper.SysMenuMapper;

@@ -2,9 +2,9 @@ package com.camel.system.controller;
 
 
 import com.baomidou.mybatisplus.service.IService;
-import com.camel.core.controller.BaseCommonController;
-import com.camel.core.entity.Result;
-import com.camel.core.utils.ResultUtil;
+import com.camel.common.controller.BaseCommonController;
+import com.camel.common.entity.Result;
+import com.camel.common.utils.ResultUtil;
 import com.camel.system.enums.MenuStatus;
 import com.camel.system.enums.MenuType;
 import com.camel.system.model.SysMenu;

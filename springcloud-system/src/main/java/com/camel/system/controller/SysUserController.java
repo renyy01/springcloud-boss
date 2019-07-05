@@ -2,9 +2,9 @@ package com.camel.system.controller;
 
 
 import com.baomidou.mybatisplus.service.IService;
-import com.camel.common.controller.BaseCommonController;
-import com.camel.common.entity.Result;
-import com.camel.common.utils.ResultUtil;
+import com.camel.core.controller.BaseCommonController;
+import com.camel.core.entity.Result;
+import com.camel.core.utils.ResultUtil;
 import com.camel.redis.entity.RedisUser;
 import com.camel.redis.utils.SerizlizeUtil;
 import com.camel.system.annotation.Log;
@@ -18,13 +18,28 @@ import org.springframework.web.bind.annotation.*;
 import java.io.Serializable;
 
 /**
- * <p>
- *  前端控制器
- * </p>
  *
- * @author ${author}
- * @since 2019-04-22
- */
+ *                 ___====-_  _-====___
+ *           _--^^^#####//      \\#####^^^--_
+ *        _-^##########// (    ) \\##########^-_
+ *       -############//  |\^^/|  \\############-
+ *     _/############//   (@::@)   \\############\_
+ *    /#############((     \\//     ))#############\
+ *   -###############\\    (oo)    //###############-
+ *  -#################\\  / VV \  //#################-
+ * -###################\\/      \//###################-
+ *_#/|##########/\######(   /\   )######/\##########|\#_
+ *|/ |#/\#/\#/\/  \#/\##\  |  |  /##/\#/  \/\#/\#/\#| \|
+ *`  |/  V  V  `   V  \#\| |  | |/#/  V   '  V  V  \|  '
+ *   `   `  `      `   / | |  | | \   '      '  '   '
+ *                    (  | |  | |  )
+ *                   __\ | |  | | /__
+ *                  (vvv(VVV)(VVV)vvv)
+ * <用户控制器>
+ * @author baily
+ * @since 1.0
+ * @date 2019/7/5
+ **/
 @RestController
 @RequestMapping("/sysUser")
 public class SysUserController extends BaseCommonController {

@@ -7,9 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springcloud-auth-server" />
+        <module name="springcloud-bpm" />
+        <module name="springcloud-bpm-server" />
         <module name="springcloud-common" />
         <module name="springcloud-core" />
-        <module name="springcloud-email" />
         <module name="springcloud-eureka-server" />
         <module name="springcloud-redis" />
         <module name="springcloud-system" />
@@ -20,9 +21,10 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="springcloud-auth-server" options="-parameters" />
+      <module name="springcloud-bpm" options="-parameters" />
+      <module name="springcloud-bpm-server" options="-parameters" />
       <module name="springcloud-common" options="-parameters" />
       <module name="springcloud-core" options="-parameters" />
-      <module name="springcloud-email" options="-parameters" />
       <module name="springcloud-eureka-server" options="-parameters" />
       <module name="springcloud-redis" options="-parameters" />
       <module name="springcloud-system" options="-parameters" />

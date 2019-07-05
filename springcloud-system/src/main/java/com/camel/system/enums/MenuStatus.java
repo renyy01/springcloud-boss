@@ -1,6 +1,6 @@
 package com.camel.system.enums;
 
-import com.camel.common.enums.BaseEnum;
+import com.camel.core.enums.BaseEnum;
 
 /** @author baily */
 public enum MenuStatus implements BaseEnum {

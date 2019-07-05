@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: springcloud-bpm
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://${APPLICATION_IP}:3306/dw_bpm?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowMultiQueries=true
+    username: root
+    password: 1234
+
+server:
+  port: 9002
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://${APPLICATION_IP}:8888/eureka/
+
+security:
+  oauth2:
+    resource:
+      id: springcloud-bpm
+      user-info-uri: http://${APPLICATION_IP}:8080/auth/api/member
+      prefer-token-info: false

@@ -3,7 +3,7 @@ package com.camel.system.model;
 import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.enums.IdType;
-import com.camel.common.entity.BasePaginationEntity;
+import com.camel.core.entity.BasePaginationEntity;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -125,7 +125,7 @@ public class SysUser extends BasePaginationEntity implements Serializable {
         ", username=" + username +
         ", password=" + password +
         ", nickname=" + nickname +
-        ", email=" + email +
+        ", bpm=" + email +
         ", mobile=" + mobile +
         ", status=" + status +
         ", gmtCreate=" + gmtCreate +

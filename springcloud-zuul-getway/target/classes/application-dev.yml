@@ -1,6 +1,8 @@
+#--------------------server---------------------
 server:
   port: 8080
 
+#--------------------spring---------------------
 spring:
   application:
     name: springcloud-gateway
@@ -34,6 +36,10 @@ zuul:
     auth:
       path: /auth/**
       serviceId: springcloud-auth
+      sensitiveHeaders: "*"
+    bpm:
+      path: /bpm/**
+      serviceId: springcloud-bpm
       sensitiveHeaders: "*"
   retryable: false
   ignored-services: "*"

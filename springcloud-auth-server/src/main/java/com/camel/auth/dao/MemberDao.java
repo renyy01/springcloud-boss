@@ -1,7 +1,7 @@
 package com.camel.auth.dao;
 
 
-import com.camel.common.entity.Member;
+import com.camel.core.entity.Member;
 
 /**
  * 〈用户Dao〉

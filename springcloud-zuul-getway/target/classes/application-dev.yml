@@ -10,6 +10,10 @@ spring:
     static-path-pattern: /**
   thymeleaf:
     prefix: classpath:/templates/
+  cloud:
+    loadbalancer:
+      retry:
+        enabled: true
 
 #--------------------eureka---------------------
 eureka:
@@ -55,10 +59,10 @@ security:
 
 #----------------------超时配置-------------------
 ribbon:
-  ReadTimeout: 3000
-  ConnectTimeout: 3000
-  MaxAutoRetries: 1
-  MaxAutoRetriesNextServer: 2
+  ReadTimeout: 6000
+  ConnectTimeout: 6000
+  MaxAutoRetries: 2
+  MaxAutoRetriesNextServer: 3
   eureka:
     enabled: true
 hystrix:

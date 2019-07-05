@@ -1,72 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f21194d6-4da2-4ac1-95e9-d28f0d95cba4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/springcloud-core/target/classes/com/camel/common/entity/Result.class" afterDir="false" />
+    <list default="true" id="f21194d6-4da2-4ac1-95e9-d28f0d95cba4" name="Default Changelist" comment="啦啦啦">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/config/oauth/AuthorizationServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/config/oauth/AuthorizationServerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/config/oauth/ResourceServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/config/oauth/ResourceServerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/controller/SessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/controller/SessionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/dao/MemberDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/dao/MemberDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/dao/PermissionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/dao/PermissionDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/dao/RoleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/dao/RoleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/service/MyUserDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/service/MyUserDetailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-auth-server/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-auth-server/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-auth-server/src/main/resources/mybatis/MemberMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-auth-server/src/main/resources/mybatis/MemberMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-auth-server/src/main/resources/mybatis/PermissionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-auth-server/src/main/resources/mybatis/PermissionMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-auth-server/src/main/resources/mybatis/RoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-auth-server/src/main/resources/mybatis/RoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-auth-server/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-auth-server/target/classes/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-auth-server/target/classes/mybatis/MemberMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-auth-server/target/classes/mybatis/MemberMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-auth-server/target/classes/mybatis/PermissionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-auth-server/target/classes/mybatis/PermissionMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-auth-server/target/classes/mybatis/RoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-auth-server/target/classes/mybatis/RoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/core/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/entity/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/core/entity/Permission.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/entity/Permission.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/core/entity/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/entity/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/core/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/entity/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/core/enumeration/ResultCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/enumeration/ResultCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/core/enums/BaseEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/enums/BaseEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/core/enums/ProcessStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/enums/ProcessStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/core/enums/ResultEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-common/src/main/java/com/camel/common/enums/ResultEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/core/config/BaseEnumConverterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/common/config/BaseEnumConverterFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/core/config/BaseEnumTypeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/common/config/BaseEnumTypeHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/core/config/MyCorsConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/common/config/MyCorsConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/core/config/ProcessProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/common/config/ProcessProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/core/controller/BaseCommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/common/controller/BaseCommonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/core/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/common/entity/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/core/entity/BasePaginationEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/common/entity/BasePaginationEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/core/entity/BaseProcessPaginationEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/common/entity/BaseProcessPaginationEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/core/entity/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/common/entity/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/core/entity/process/ActivitiEndCallBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/common/entity/process/ActivitiEndCallBack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/core/entity/process/ActivitiForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/common/entity/process/ActivitiForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/core/entity/process/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/common/entity/process/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/core/entity/process/UserTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/common/entity/process/UserTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/core/enums/BaseEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/common/enums/BaseEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/core/enums/ProcessStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/common/enums/ProcessStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/core/enums/ResultEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/common/enums/ResultEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/core/utils/ApplicationUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/common/utils/ApplicationUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/core/utils/IoUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/common/utils/IoUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/core/utils/PaginationUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/common/utils/PaginationUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/core/utils/ResultUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-core/src/main/java/com/camel/common/utils/ResultUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/config/ResourceServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/config/ResourceServerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/controller/SysLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/controller/SysLogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/controller/SysMacroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/controller/SysMacroController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/controller/SysMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/controller/SysMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/controller/SysRoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/controller/SysRoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/controller/SysUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/enums/MacroStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/enums/MacroStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/enums/MenuStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/enums/MenuStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/enums/MenuType.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/enums/MenuType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/enums/RoleStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/enums/RoleStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/model/SysLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/model/SysLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/model/SysMacro.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/model/SysMacro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/model/SysMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/model/SysMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/model/SysRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/model/SysRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/model/SysRoleMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/model/SysRoleMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/model/SysUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/model/SysUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/model/SysUserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/model/SysUserRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/service/impl/SysMenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/service/impl/SysMenuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-system/src/main/resources/mapper/SysMacroMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-system/src/main/resources/mapper/SysMacroMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-zuul-getway/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-zuul-getway/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-zuul-getway/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-zuul-getway/target/classes/application-dev.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -231,6 +169,7 @@
           <entry key="dummy" value="23" />
           <entry key="html" value="405" />
           <entry key="java" value="778" />
+          <entry key="md" value="181" />
           <entry key="txt" value="5" />
           <entry key="xml" value="145" />
           <entry key="yml" value="118" />
@@ -240,6 +179,7 @@
         <counts>
           <entry key="HTML" value="405" />
           <entry key="JAVA" value="778" />
+          <entry key="Markdown" value="181" />
           <entry key="PLAIN_TEXT" value="28" />
           <entry key="XML" value="145" />
           <entry key="YAML" value="118" />
@@ -251,7 +191,7 @@
           <entry key="html" value="4" />
           <entry key="java" value="228" />
           <entry key="js" value="4" />
-          <entry key="md" value="1" />
+          <entry key="md" value="2" />
           <entry key="xml" value="40" />
           <entry key="yml" value="28" />
         </counts>
@@ -262,7 +202,7 @@
           <entry key="HTML" value="4" />
           <entry key="JAVA" value="228" />
           <entry key="JavaScript" value="4" />
-          <entry key="Markdown" value="1" />
+          <entry key="Markdown" value="2" />
           <entry key="XML" value="40" />
           <entry key="YAML" value="28" />
         </counts>
@@ -289,15 +229,28 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/controller/SessionController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="84">
+              <caret line="50" column="35" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1746#1747#0" expanded="true" />
                 <element signature="e#1789#1790#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="105">
+                <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -317,15 +270,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/config/oauth/ResourceServerConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="46" column="98" selection-start-line="46" selection-start-column="98" selection-end-line="46" selection-end-column="98" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/boot/spring-security-oauth2-autoconfigure/2.0.0.RELEASE/spring-security-oauth2-autoconfigure-2.0.0.RELEASE.jar!/org/springframework/boot/autoconfigure/security/oauth2/resource/UserInfoTokenServices.class">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="134">
@@ -337,8 +281,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/springcloud-zuul-getway/src/main/resources/application-dev.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+            <state relative-caret-position="271">
+              <caret line="56" column="19" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -431,7 +375,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/service/SysMacroService.java" />
         <option value="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/service/impl/SysMacroServiceImpl.java" />
         <option value="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/annotation/Log.java" />
         <option value="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/aop/LogAspect.java" />
@@ -482,6 +425,7 @@
         <option value="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/config/oauth/ResourceServerConfig.java" />
         <option value="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/controller/SessionController.java" />
         <option value="$PROJECT_DIR$/springcloud-zuul-getway/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -696,6 +640,14 @@
             <path>
               <item name="springcloud-boss" type="b2602c69:ProjectViewProjectNode" />
               <item name="springcloud-boss" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-auth-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-boss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-boss" type="462c0819:PsiDirectoryNode" />
               <item name="springcloud-zuul-getway" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -735,7 +687,7 @@
     <property name="SearchEverywhereHistoryKey" value="SecurityContextHol&#9;PSI&#9;JAVA://org.springframework.security.core.context.SecurityContextHolder&#10;com.curise.eshop.common.entity&#9;PSI&#9;JAVA://com.curise.eshop.common.model.BaseEntity" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562297895941" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562308275037" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/eshop-common/src/main/java/com/curise/eshop/common" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -890,9 +842,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.SpringCloudAuthServerApplication" />
         <item itemvalue="Spring Boot.SpringCloudZuulApplication" />
         <item itemvalue="Spring Boot.SpringCloudSystemApplication" />
+        <item itemvalue="Spring Boot.SpringCloudAuthServerApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -963,14 +915,22 @@
       <option name="project" value="LOCAL" />
       <updated>1562259282672</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="啦啦啦">
+      <created>1562297965413</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1562297965413</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85585000" />
+    <option name="totallyTimeSpent" value="87640000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26752505" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1245,16 +1205,6 @@
     <entry file="file://$PROJECT_DIR$/springcloud-zuul-getway/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="30">
-            <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springcloud-system/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1455,13 +1405,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-zuul-getway/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/SpringCloudAuthServerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -1483,12 +1426,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/controller/SessionController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="84">
+          <caret line="50" column="35" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1746#1747#0" expanded="true" />
             <element signature="e#1789#1790#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-zuul-getway/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="56" column="19" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="105">
+            <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

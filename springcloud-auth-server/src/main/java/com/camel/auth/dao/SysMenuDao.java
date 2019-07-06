@@ -1,5 +1,6 @@
 package com.camel.auth.dao;
 
+import com.camel.auth.model.SysMenu;
 import com.camel.core.entity.Permission;
 
 import java.util.List;
@@ -11,12 +12,12 @@ import java.util.List;
  * @create 2018/12/13
  * @since 1.0.0
  */
-public interface PermissionDao {
+public interface SysMenuDao {
 
     /**
      * 根据角色id查找权限列表
      * @param roleId 角色id
      * @return 权限列表
      */
-    List<Permission> findByRoleId(Integer roleId);
+    List<SysMenu> findByRoleId(Integer roleId);
 }

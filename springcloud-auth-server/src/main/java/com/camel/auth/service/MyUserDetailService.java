@@ -1,9 +1,13 @@
 package com.camel.auth.service;
 
-import com.camel.auth.dao.MemberDao;
+import com.camel.auth.dao.SysUserDao;
+import com.camel.auth.model.SysMenu;
+import com.camel.auth.model.SysRole;
+import com.camel.auth.model.SysUser;
 import com.camel.core.entity.Member;
 import com.camel.core.entity.Permission;
 import com.camel.core.entity.Role;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -11,6 +15,7 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
@@ -43,13 +48,13 @@ import java.util.Set;
 public class MyUserDetailService implements UserDetailsService {
 
     @Autowired
-    private MemberDao memberDao;
+    private SysUserDao sysUserDao;
 
     @Override
-    public UserDetails loadUserByUsername(String memberName) throws UsernameNotFoundException {
-        Member member = memberDao.findByMemberName(memberName);
-        if (member == null) {
-            throw new UsernameNotFoundException(memberName);
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        SysUser sysUser = sysUserDao.findByUserName(username);
+        if (sysUser == null) {
+            throw new UsernameNotFoundException(username);
         }
         Set<GrantedAuthority> grantedAuthorities = new HashSet<>();
         // 可用性 :true:可用 false:不可用
@@ -60,17 +65,19 @@ public class MyUserDetailService implements UserDetailsService {
         boolean credentialsNonExpired = true;
         // 锁定性 :true:未锁定 false:已锁定
         boolean accountNonLocked = true;
-        for (Role role : member.getRoles()) {
+        for (SysRole role : sysUser.getSysRoles()) {
             //角色必须是ROLE_开头，可以在数据库中设置
             GrantedAuthority grantedAuthority = new SimpleGrantedAuthority(role.getRoleName());
             grantedAuthorities.add(grantedAuthority);
             //获取权限
-            for (Permission permission : role.getPermissions()) {
-                GrantedAuthority authority = new SimpleGrantedAuthority(permission.getUri());
-                grantedAuthorities.add(authority);
+            for (SysMenu menu : role.getSysMenus()) {
+                if(!StringUtils.isBlank(menu.getUrl())){
+                    GrantedAuthority authority = new SimpleGrantedAuthority(menu.getUrl());
+                    grantedAuthorities.add(authority);
+                }
             }
         }
-        User user = new User(member.getMemberName(), member.getPassword(),
+        User user = new User(sysUser.getUsername(), sysUser.getPassword(),
                 enabled, accountNonExpired, credentialsNonExpired, accountNonLocked, grantedAuthorities);
         return user;
     }

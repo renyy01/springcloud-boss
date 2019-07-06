@@ -39,6 +39,9 @@ import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.oauth2.provider.OAuth2Authentication;
+import org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationDetails;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
@@ -533,9 +536,14 @@ public class BpmServiceImpl implements BpmService {
     }
 
     @Override
-    public List<UserTask> toDo() {
-        RedisUser redisUser = SessionContextUtils.getInstance().currentUser(redisTemplate);
-        List<Task> tasks = taskService.createTaskQuery().active().taskCandidateGroupIn(redisUser.getRoles()).list();
+    public List<UserTask> toDo(OAuth2Authentication authentication) {
+        List<String> authrities = new ArrayList<>();
+
+        authentication.getAuthorities().forEach(grantedAuthority -> {
+//            SimpleGrantedAuthority simpleGrantedAuthority = (SimpleGrantedAuthority)grantedAuthority;
+            authrities.add(grantedAuthority.getAuthority().toUpperCase());
+        });
+        List<Task> tasks = taskService.createTaskQuery().active().taskCandidateGroupIn(authrities).list();
         List<UserTask> userTasks = ActivitiObj2SystemObjUtils.getInstance().tasks2UserTasks(tasks);
         return userTasks;
     }

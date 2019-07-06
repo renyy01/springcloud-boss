@@ -4,6 +4,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 
 /**
  *
@@ -29,6 +30,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * @date 2019/7/4
  **/
 @EnableDiscoveryClient
+@EnableGlobalMethodSecurity(prePostEnabled = true)
 @MapperScan("com.camel.bpm.mapper")
 @SpringBootApplication(exclude = {org.activiti.spring.boot.SecurityAutoConfiguration.class})
 public class SpringCloudBpmApplication {

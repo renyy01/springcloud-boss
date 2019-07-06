@@ -6,6 +6,8 @@ import com.camel.core.entity.process.UserTask;
 import com.github.pagehelper.PageInfo;
 import org.activiti.engine.repository.Deployment;
 import org.activiti.engine.runtime.ProcessInstance;
+import org.springframework.security.oauth2.provider.OAuth2Authentication;
+import org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationDetails;
 
 import java.io.InputStream;
 import java.util.List;
@@ -125,5 +127,5 @@ public interface BpmService {
 
     ProcessInstance processInstance(String businessKey);
 
-    List<UserTask> toDo();
+    List<UserTask> toDo(OAuth2Authentication authentication);
 }

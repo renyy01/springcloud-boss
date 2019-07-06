@@ -1,8 +1,5 @@
-package com.camel.core.utils;
+package com.camel.common.utils;
 
-import javax.servlet.ServletOutputStream;
-import javax.servlet.ServletResponse;
-import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 
 /**

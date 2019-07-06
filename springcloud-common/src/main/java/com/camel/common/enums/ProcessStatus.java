@@ -1,4 +1,4 @@
-package com.camel.core.enums;
+package com.camel.common.enums;
 
 /**
  @author baily

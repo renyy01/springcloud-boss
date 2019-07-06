@@ -9,7 +9,7 @@ import com.camel.bpm.model.WorkFlow;
 import com.camel.bpm.service.WorkFlowService;
 import com.camel.core.controller.BaseCommonController;
 import com.camel.core.entity.Result;
-import com.camel.core.enums.ResultEnum;
+import com.camel.common.enums.ResultEnum;
 import com.camel.core.utils.ResultUtil;
 import com.camel.redis.entity.RedisUser;
 import com.camel.redis.utils.SerizlizeUtil;

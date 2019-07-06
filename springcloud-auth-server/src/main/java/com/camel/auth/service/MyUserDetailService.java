@@ -4,9 +4,6 @@ import com.camel.auth.dao.SysUserDao;
 import com.camel.auth.model.SysMenu;
 import com.camel.auth.model.SysRole;
 import com.camel.auth.model.SysUser;
-import com.camel.core.entity.Member;
-import com.camel.core.entity.Permission;
-import com.camel.core.entity.Role;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
@@ -15,7 +12,6 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;

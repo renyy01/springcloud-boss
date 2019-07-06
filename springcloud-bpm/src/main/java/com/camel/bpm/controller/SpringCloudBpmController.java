@@ -6,7 +6,7 @@ import com.camel.bpm.service.BpmService;
 import com.camel.core.entity.Result;
 import com.camel.core.entity.process.ActivitiForm;
 import com.camel.core.entity.process.UserTask;
-import com.camel.core.utils.IoUtils;
+import com.camel.common.utils.IoUtils;
 import com.camel.core.utils.ResultUtil;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.activiti.engine.ProcessEngine;

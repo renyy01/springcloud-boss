@@ -2,8 +2,8 @@ package com.camel.auth.controller;
 
 import com.camel.auth.config.oauth.RedisTokenStore;
 import com.camel.auth.service.MyUserDetailService;
-import com.camel.core.entity.Result;
-import com.camel.core.enumeration.ResultCode;
+import com.camel.common.entity.Result;
+import com.camel.common.enumeration.ResultCode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.oauth2.provider.token.ConsumerTokenServices;
 import org.springframework.web.bind.annotation.*;

@@ -2,7 +2,6 @@ package com.camel.auth.dao;
 
 
 import com.camel.auth.model.SysUser;
-import com.camel.core.entity.Member;
 
 /**
  *　　　　　　　 ┏┓    ┏┓+ +

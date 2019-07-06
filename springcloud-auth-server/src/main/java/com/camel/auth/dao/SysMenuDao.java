@@ -1,7 +1,6 @@
 package com.camel.auth.dao;
 
 import com.camel.auth.model.SysMenu;
-import com.camel.core.entity.Permission;
 
 import java.util.List;
 

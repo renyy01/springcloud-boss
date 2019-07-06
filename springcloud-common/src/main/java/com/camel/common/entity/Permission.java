@@ -1,24 +1,24 @@
-package com.camel.core.entity;
+package com.camel.common.entity;
 
 import lombok.Data;
 
 import java.util.Date;
-import java.util.Set;
 
 /**
- * 〈角色实体〉
+ * 〈权限实体〉
  *
  * @author Curise
  * @create 2018/12/13
  * @since 1.0.0
  */
 @Data
-public class Role {
+public class Permission {
 
     private int id;
-    private String roleName;
-    private short valid;
+    private String zuulPrefix;
+    private String servicePrefix;
+    private String method;
+    private String uri;
     private Date createTime;
     private Date updateTime;
-    private Set<Permission> permissions;
 }

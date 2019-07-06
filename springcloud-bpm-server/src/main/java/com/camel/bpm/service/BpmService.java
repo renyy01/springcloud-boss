@@ -1,7 +1,6 @@
 package com.camel.bpm.service;
 
 import com.camel.bpm.model.WorkFlow;
-import com.camel.core.entity.Result;
 import com.camel.core.entity.process.ActivitiEndCallBack;
 import com.camel.core.entity.process.UserTask;
 import com.github.pagehelper.PageInfo;

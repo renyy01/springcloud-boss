@@ -1,4 +1,4 @@
-package com.camel.core.entity;
+package com.camel.common.entity;
 
 import lombok.Data;
 

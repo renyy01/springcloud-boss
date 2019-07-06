@@ -7,7 +7,7 @@
     <meta name="author" content="Vincent Garreau"/>
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <link rel="stylesheet" media="screen" href="css/style.css" />
+    <link rel="stylesheet" media="screen" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="css/reset.css"/>
     <link rel="icon" href="/authserver/favicon.ico" type="image/x-icon"/>
 </head>
@@ -19,25 +19,30 @@
             统一登录页面
         </div>
         <form id="loginForm" th:action="@{/login}" name="f" method="post">
-        <div class="login-center clearfix">
-            <div class="login-center-img"><img src="images/name.png"/></div>
-            <div class="login-center-input">
-                <input type="text" name="username" id="username" value="" placeholder="请输入您的用户名" onfocus="this.placeholder=''"
-                       onblur="this.placeholder='请输入您的用户名'"/>
-                <div class="login-center-input-text">用户名</div>
+            <div class="login-center clearfix">
+                <div class="login-center-img"><img src="images/name.png"/></div>
+                <div class="login-center-input">
+                    <input type="text" name="username" id="username" value="" placeholder="请输入您的用户名"
+                           onfocus="this.placeholder=''"
+                           onblur="this.placeholder='请输入您的用户名'"/>
+                    <div class="login-center-input-text">用户名</div>
+                </div>
             </div>
-        </div>
-        <div class="login-center clearfix">
-            <div class="login-center-img"><img src="images/password.png"/></div>
-            <div class="login-center-input">
-                <input type="password" name="password" id="password" value="" placeholder="请输入您的密码" onfocus="this.placeholder=''"
-                       onblur="this.placeholder='请输入您的密码'"/>
-                <div class="login-center-input-text">密码</div>
+            <div class="login-center clearfix">
+                <div class="login-center-img"><img src="images/password.png"/></div>
+                <div class="login-center-input">
+                    <input type="password" name="password" id="password" value="" placeholder="请输入您的密码"
+                           onfocus="this.placeholder=''"
+                           onblur="this.placeholder='请输入您的密码'"/>
+                    <div class="login-center-input-text">密码</div>
+                </div>
             </div>
-        </div>
-        <div class="login-button">
-            登陆
-        </div>
+            <div style="text-align: center;color: red; display: none;" class="error_message">
+                <span>用户名密码不正确，请确认后重新提交</span>
+            </div>
+            <div class="login-button">
+                登陆
+            </div>
         </form>
     </div>
     <div class="sk-rotating-plane"></div>
@@ -71,6 +76,7 @@
     }
 
     document.querySelector(".login-button").onclick = function () {
+        $(".error_message").hide();
         var username = document.querySelector('#username').value;
         var password = document.querySelector('#password').value;
 
@@ -85,7 +91,10 @@
             success: function (resp) {
                 sessionStorage.setItem("access_token", resp['access_token']);
                 sessionStorage.setItem("refresh_token", resp['refresh_token']);
-                window.location.href="/"
+                window.location.href = "/"
+            },
+            error: function (resp) {
+                $(".error_message").show();
             }
         })
     }

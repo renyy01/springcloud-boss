@@ -1,4 +1,4 @@
-package com.camel.core.enumeration;
+package com.camel.common.enumeration;
 
 
 /**

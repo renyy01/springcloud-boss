@@ -41,6 +41,10 @@ zuul:
       path: /bpm/**
       serviceId: springcloud-bpm
       sensitiveHeaders: "*"
+    oa:
+      path: /oa/**
+      serviceId: springcloud-oa
+      sensitiveHeaders: "*"
   retryable: false
   ignored-services: "*"
   ribbon:

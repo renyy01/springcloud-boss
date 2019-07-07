@@ -1,11 +1,10 @@
-package com.camel.system;
+package com.camel.oa;
 
 import org.mybatis.spring.annotation.MapperScan;
-import org.slf4j.LoggerFactory;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 
 /**
@@ -26,23 +25,20 @@ import org.springframework.security.config.annotation.method.configuration.Enabl
  *                    (  | |  | |  )
  *                   __\ | |  | | /__
  *                  (vvv(VVV)(VVV)vvv)
- * 系统服务
+ * <OA服务>
  * @author baily
  * @since 1.0
- * @date 2019/7/4
+ * @date 2019/7/7
  **/
-@MapperScan("com.camel.system.mapper")
-@SpringBootApplication
+@MapperScan("com.camel.oa.mapper")
 @EnableDiscoveryClient
+@EnableFeignClients
 @EnableGlobalMethodSecurity(prePostEnabled = true)
-public class SpringCloudSystemApplication implements CommandLineRunner {
+@SpringBootApplication
+public class SpringCloudOaServerApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(SpringCloudSystemApplication.class,args);
-    }
+	public static void main(String[] args) {
+		SpringApplication.run(SpringCloudOaServerApplication.class, args);
+	}
 
-    @Override
-    public void run(String... args) throws Exception {
-        LoggerFactory.getLogger(this.getClass()).info("SpringCloud 资源服务-系统服务启动完成...");
-    }
 }

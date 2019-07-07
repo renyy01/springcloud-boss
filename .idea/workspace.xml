@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f21194d6-4da2-4ac1-95e9-d28f0d95cba4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/model/MyUserDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-bpm/src/main/java/com/camel/bpm/SpringCloudBpmApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-bpm/src/main/java/com/camel/bpm/SpringCloudBpmApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-bpm/src/main/java/com/camel/bpm/controller/SpringCloudBpmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-bpm/src/main/java/com/camel/bpm/controller/SpringCloudBpmController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-bpm/src/main/java/com/camel/bpm/service/BpmService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-bpm/src/main/java/com/camel/bpm/service/BpmService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-bpm/src/main/java/com/camel/bpm/service/impl/BpmServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-bpm/src/main/java/com/camel/bpm/service/impl/BpmServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-bpm/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-bpm/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/service/MyUserDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/service/MyUserDetailService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -175,10 +172,10 @@
           <entry key="class" value="1" />
           <entry key="dummy" value="28" />
           <entry key="html" value="501" />
-          <entry key="java" value="3154" />
+          <entry key="java" value="3371" />
           <entry key="md" value="181" />
           <entry key="pom" value="1" />
-          <entry key="txt" value="14" />
+          <entry key="txt" value="33" />
           <entry key="xml" value="714" />
           <entry key="yml" value="259" />
         </counts>
@@ -187,9 +184,9 @@
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="HTML" value="501" />
-          <entry key="JAVA" value="3154" />
+          <entry key="JAVA" value="3371" />
           <entry key="Markdown" value="181" />
-          <entry key="PLAIN_TEXT" value="42" />
+          <entry key="PLAIN_TEXT" value="61" />
           <entry key="SQL" value="9" />
           <entry key="XML" value="706" />
           <entry key="YAML" value="259" />
@@ -199,10 +196,10 @@
         <counts>
           <entry key="0-SNAPSHOT" value="1" />
           <entry key="bpmn" value="2" />
-          <entry key="class" value="68" />
+          <entry key="class" value="71" />
           <entry key="dtd" value="1" />
           <entry key="html" value="5" />
-          <entry key="java" value="424" />
+          <entry key="java" value="431" />
           <entry key="js" value="4" />
           <entry key="md" value="2" />
           <entry key="pom" value="3" />
@@ -212,10 +209,10 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="68" />
+          <entry key="CLASS" value="71" />
           <entry key="DTD" value="1" />
           <entry key="HTML" value="5" />
-          <entry key="JAVA" value="424" />
+          <entry key="JAVA" value="431" />
           <entry key="JavaScript" value="4" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="2" />
@@ -232,67 +229,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springcloud-bpm/src/main/resources/application-dev.yml">
+        <entry file="file://$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/controller/SysUserRoleController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+            <state relative-caret-position="73">
+              <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springcloud-bpm/src/main/resources/application-prod.yml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springcloud-bpm/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springcloud-bpm/src/main/java/com/camel/bpm/SpringCloudBpmApplication.java">
+        <entry file="file://$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/controller/SysUserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springcloud-bpm/src/main/java/com/camel/bpm/controller/DeployedWorkflows.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springcloud-bpm/src/main/java/com/camel/bpm/controller/SpringCloudBpmController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="218" column="42" lean-forward="true" selection-start-line="218" selection-start-column="42" selection-end-line="218" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#6654#6655#0" expanded="true" />
-                <element signature="e#6688#6689#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springcloud-bpm/src/main/java/com/camel/bpm/service/BpmService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="129" column="19" selection-start-line="129" selection-start-column="19" selection-end-line="129" selection-end-column="19" />
+            <state relative-caret-position="171">
+              <caret line="97" selection-start-line="97" selection-end-line="97" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -301,10 +250,41 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/springcloud-bpm/src/main/java/com/camel/bpm/service/impl/BpmServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/service/MyUserDetailService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="542" column="36" lean-forward="true" selection-start-line="542" selection-start-column="36" selection-end-line="543" selection-end-column="36" />
+            <state relative-caret-position="141">
+              <caret line="70" column="45" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/SpringCloudAuthServerApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/controller/SessionController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+              <folding>
+                <element signature="e#1661#1662#0" expanded="true" />
+                <element signature="e#1693#1694#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/model/MyUserDetails.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -313,19 +293,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springcloud-system/pom.xml">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.6.RELEASE/spring-aop-5.0.6.RELEASE.jar!/org/springframework/aop/interceptor/ExposeInvocationInterceptor.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-64">
-              <caret line="36" column="21" lean-forward="true" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+            <state relative-caret-position="178">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springcloud-system/src/main/resources/application-dev.yml">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.0.5.RELEASE/spring-security-core-5.0.5.RELEASE.jar!/org/springframework/security/core/userdetails/UserDetails.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" selection-start-line="22" selection-end-line="27" selection-end-column="30" />
+            <state relative-caret-position="90">
+              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.0.5.RELEASE/spring-security-core-5.0.5.RELEASE.jar!/org/springframework/security/core/userdetails/User.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="55">
+              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/model/SysUser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -341,9 +342,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>1.0</find>
       <find>redisTemp</find>
-      <find>redisTemplate</find>
       <find>1.0-SNAPSHOT</find>
       <find>spring-security-oauth2</find>
       <find>re</find>
@@ -371,6 +370,8 @@
       <find>error_description</find>
       <find>BaseEnumTypeHandler</find>
       <find>ResultEnum</find>
+      <find>redisTemplate</find>
+      <find>authentication</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -385,7 +386,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/model/SysMenu.java" />
         <option value="$PROJECT_DIR$/springcloud-auth-server/src/main/resources/mybatis/MemberMapper.xml" />
         <option value="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/dao/MemberDao.java" />
         <option value="$PROJECT_DIR$/springcloud-system/src/main/resources/mapper/SysUserMapper.xml" />
@@ -400,7 +400,6 @@
         <option value="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/dao/SysMenuDao.java" />
         <option value="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/dao/SysRoleDao.java" />
         <option value="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/config/security/SecurityConfig.java" />
-        <option value="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/service/MyUserDetailService.java" />
         <option value="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/exceptions/MyCustomOauthException.java" />
         <option value="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/util/MySesializer.java" />
         <option value="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/util/MyCustomOauthExceptionSerializer.java" />
@@ -417,7 +416,6 @@
         <option value="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/controller/SysLogController.java" />
         <option value="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/controller/SysMenuController.java" />
         <option value="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/controller/SysRoleController.java" />
-        <option value="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/controller/SysUserController.java" />
         <option value="$PROJECT_DIR$/springcloud-bpm/src/main/java/com/camel/bpm/controller/WorkFlowController.java" />
         <option value="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/enums/MacroStatus.java" />
         <option value="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/config/error/Auth2ExceptionExcutor.java" />
@@ -436,6 +434,9 @@
         <option value="$PROJECT_DIR$/springcloud-bpm/src/main/java/com/camel/bpm/controller/SpringCloudBpmController.java" />
         <option value="$PROJECT_DIR$/springcloud-bpm/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/springcloud-bpm/src/main/java/com/camel/bpm/service/impl/BpmServiceImpl.java" />
+        <option value="$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/controller/SysUserController.java" />
+        <option value="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/model/MyUserDetails.java" />
+        <option value="$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/service/MyUserDetailService.java" />
       </list>
     </option>
   </component>
@@ -615,6 +616,40 @@
             </path>
             <path>
               <item name="springcloud-boss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-boss" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-zuul-getway" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-boss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-boss" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-zuul-getway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-boss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-boss" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-zuul-getway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-boss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-boss" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-zuul-getway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-boss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-boss" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-zuul-getway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-boss" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -632,7 +667,7 @@
     <property name="SearchEverywhereHistoryKey" value="Result&#9;PSI&#9;JAVA://com.camel.common.entity.Result&#10;BCryptPasswordEncoder&#9;PSI&#9;JAVA://org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder&#10;BasePaginationEntity&#9;PSI&#9;JAVA://com.camel.core.entity.BasePaginationEntity&#10;GlobalAuthenticationConfigurerAdapter&#9;PSI&#9;JAVA://org.springframework.security.config.annotation.authentication.configuration.GlobalAuthenticationConfigurerAdapter&#10;SecurityContextHol&#9;PSI&#9;JAVA://org.springframework.security.core.context.SecurityContextHolder&#10;com.curise.eshop.common.entity&#9;PSI&#9;JAVA://com.curise.eshop.common.model.BaseEntity" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562425603206" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562467642862" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/eshop-common/src/main/java/com/curise/eshop/common" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -831,9 +866,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.SpringCloudZuulApplication" />
         <item itemvalue="Spring Boot.SpringCloudAuthServerApplication" />
         <item itemvalue="Spring Boot.SpringCloudSystemApplication" />
+        <item itemvalue="Spring Boot.SpringCloudZuulApplication" />
         <item itemvalue="Cucumber java.All Features in: core" />
       </list>
     </recent_temporary>
@@ -855,7 +890,7 @@
       <workItem from="1545007357964" duration="13387000" />
       <workItem from="1562211743942" duration="9644000" />
       <workItem from="1562225301636" duration="3994000" />
-      <workItem from="1562317571849" duration="32791000" />
+      <workItem from="1562317571849" duration="36851000" />
     </task>
     <task id="LOCAL-00001" summary="11">
       <created>1562217200574</created>
@@ -941,7 +976,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562421872326</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="重新得到代办事项">
+      <created>1562425716065</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1562425716065</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -950,13 +992,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129023000" />
+    <option name="totallyTimeSpent" value="133083000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49900597" visible="true" weight="0.27110156" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49900597" visible="true" weight="0.27110156" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -978,10 +1019,10 @@
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49928468" weight="0.3290653" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="13" visible="true" weight="0.3290653" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.3290653" />
       <window_info anchor="bottom" id="JRebel Executor" order="14" />
       <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.50214595" side_tool="true" weight="0.3559539" />
-      <window_info anchor="bottom" id="Run Dashboard" order="16" sideWeight="0.49713877" weight="0.3559539" />
+      <window_info anchor="bottom" id="Run Dashboard" order="16" sideWeight="0.49713877" visible="true" weight="0.3559539" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1016,7 +1057,8 @@
     <MESSAGE value="啦啦啦" />
     <MESSAGE value="readme" />
     <MESSAGE value="BPM" />
-    <option name="LAST_COMMIT_MESSAGE" value="BPM" />
+    <MESSAGE value="重新得到代办事项" />
+    <option name="LAST_COMMIT_MESSAGE" value="重新得到代办事项" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1045,23 +1087,11 @@
           <properties />
           <option name="timeStamp" value="59" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/springcloud-bpm/src/main/java/com/camel/bpm/controller/SpringCloudBpmController.java</url>
-          <line>218</line>
-          <properties />
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/springcloud-bpm/src/main/java/com/camel/bpm/controller/SpringCloudBpmController.java</url>
-          <line>224</line>
-          <properties />
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
-        <watch expression="e instanceof OAuth2Exception" language="JAVA" custom="org.springframework.security.core.context.SecurityContextHolder,org.apache.catalina.security.SecurityUtil" />
+        <watch expression="SecurityContextHolder.getContext()" language="JAVA" custom="org.springframework.security.core.context.SecurityContextHolder,org.apache.catalina.security.SecurityUtil" />
         <watch expression="session.getAttribute(&quot;test&quot;)" />
         <watch expression="principal" />
         <watch expression="this.authenticationManager" />
@@ -1073,6 +1103,24 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>SecurityContextHolder.getContext()</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>org.springframework.security.core.context.SecurityContextHolder,org.apache.catalina.security.SecurityUtil</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>SecurityContextHolder.getContext().getAuthentication()</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>org.springframework.security.core.context.SecurityContextHolder,org.apache.catalina.security.SecurityUtil</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>SecurityContextHolder.getContext().getAuthentication().getDetails()</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>org.springframework.security.core.context.SecurityContextHolder,org.apache.catalina.security.SecurityUtil</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>e instanceof OAuth2Exception</expression-string>
         <language-id>JAVA</language-id>
@@ -1087,12 +1135,6 @@
       </expression>
       <expression>
         <expression-string>pri</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>org.springframework.security.core.context.SecurityContextHolder,org.apache.catalina.security.SecurityUtil</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>SecurityContextHolder.getContext()</expression-string>
         <language-id>JAVA</language-id>
         <custom-info>org.springframework.security.core.context.SecurityContextHolder,org.apache.catalina.security.SecurityUtil</custom-info>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -1115,89 +1157,9 @@
         <custom-info>org.springframework.security.core.context.SecurityContextHolder</custom-info>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>SecurityContextHolder.getContext().getAuthentication()</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>org.springframework.security.core.context.SecurityContextHolder</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/controller/SysMenuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/controller/SysRoleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-          <folding>
-            <element signature="e#1720#1721#0" expanded="true" />
-            <element signature="e#1789#1790#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/controller/SysUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/controller/SysUserRoleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-bpm/src/main/java/com/camel/bpm/controller/WorkFlowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-bpm/src/main/resources/mapper/WorkFlowMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-bpm-server/src/main/resources/mapper/WorkFlowMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/service/SysUserRoleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/service/SysLogService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/service/SysMacroService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/service/impl/SysMacroServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1532,18 +1494,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-bpm/src/main/java/com/camel/bpm/controller/SpringCloudBpmController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="218" column="42" lean-forward="true" selection-start-line="218" selection-start-column="42" selection-end-line="218" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6654#6655#0" expanded="true" />
-            <element signature="e#6688#6689#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springcloud-bpm/src/main/java/com/camel/bpm/service/BpmService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -1556,11 +1506,106 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/springcloud-bpm/src/main/java/com/camel/bpm/service/impl/BpmServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="542" column="36" lean-forward="true" selection-start-line="542" selection-start-column="36" selection-end-line="543" selection-end-column="36" />
+        <state relative-caret-position="276">
+          <caret line="544" column="11" lean-forward="true" selection-start-line="544" selection-start-column="11" selection-end-line="544" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-bpm/src/main/java/com/camel/bpm/controller/SpringCloudBpmController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="218" selection-start-line="218" selection-end-line="218" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6654#6655#0" expanded="true" />
+            <element signature="e#6688#6689#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/controller/SysUserRoleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/model/SysUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.0.5.RELEASE/spring-security-core-5.0.5.RELEASE.jar!/org/springframework/security/core/userdetails/UserDetails.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.0.5.RELEASE/spring-security-core-5.0.5.RELEASE.jar!/org/springframework/security/core/userdetails/User.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.6.RELEASE/spring-aop-5.0.6.RELEASE.jar!/org/springframework/aop/interceptor/ExposeInvocationInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/SpringCloudAuthServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/controller/SessionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="e#1661#1662#0" expanded="true" />
+            <element signature="e#1693#1694#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/model/MyUserDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-system/src/main/java/com/camel/system/controller/SysUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-auth-server/src/main/java/com/camel/auth/service/MyUserDetailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="70" column="45" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
         </state>
       </provider>
     </entry>

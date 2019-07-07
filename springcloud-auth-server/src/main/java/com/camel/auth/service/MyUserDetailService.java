@@ -1,11 +1,14 @@
 package com.camel.auth.service;
 
 import com.camel.auth.dao.SysUserDao;
+import com.camel.auth.model.MyUserDetails;
 import com.camel.auth.model.SysMenu;
 import com.camel.auth.model.SysRole;
 import com.camel.auth.model.SysUser;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
@@ -14,6 +17,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -73,8 +77,7 @@ public class MyUserDetailService implements UserDetailsService {
                 }
             }
         }
-        User user = new User(sysUser.getUsername(), sysUser.getPassword(),
-                enabled, accountNonExpired, credentialsNonExpired, accountNonLocked, grantedAuthorities);
+        MyUserDetails user = new MyUserDetails(sysUser, enabled, accountNonExpired, credentialsNonExpired, accountNonLocked, grantedAuthorities);
         return user;
     }
 

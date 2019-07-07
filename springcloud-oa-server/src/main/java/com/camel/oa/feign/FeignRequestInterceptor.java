@@ -10,6 +10,29 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.oauth2.client.OAuth2RestTemplate;
 import org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationDetails;
 
+/**
+ *
+ *                 ___====-_  _-====___
+ *           _--^^^#####//      \\#####^^^--_
+ *        _-^##########// (    ) \\##########^-_
+ *       -############//  |\^^/|  \\############-
+ *     _/############//   (@::@)   \\############\_
+ *    /#############((     \\//     ))#############\
+ *   -###############\\    (oo)    //###############-
+ *  -#################\\  / VV \  //#################-
+ * -###################\\/      \//###################-
+ *_#/|##########/\######(   /\   )######/\##########|\#_
+ *|/ |#/\#/\#/\/  \#/\##\  |  |  /##/\#/  \/\#/\#/\#| \|
+ *`  |/  V  V  `   V  \#\| |  | |/#/  V   '  V  V  \|  '
+ *   `   `  `      `   / | |  | | \   '      '  '   '
+ *                    (  | |  | |  )
+ *                   __\ | |  | | /__
+ *                  (vvv(VVV)(VVV)vvv)
+ * <feign请求拦截 添加认证信息>
+ * @author baily
+ * @since 1.0
+ * @date 2019/7/7
+ **/
 @Configuration
 public class FeignRequestInterceptor implements RequestInterceptor {
     private final Logger logger = LoggerFactory.getLogger(getClass());

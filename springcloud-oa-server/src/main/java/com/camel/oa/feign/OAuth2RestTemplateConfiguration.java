@@ -6,6 +6,29 @@ import org.springframework.security.oauth2.client.DefaultOAuth2RequestAuthentica
 import org.springframework.security.oauth2.client.OAuth2RestTemplate;
 import org.springframework.security.oauth2.client.token.grant.client.ClientCredentialsResourceDetails;
 
+/**
+ *
+ *                 ___====-_  _-====___
+ *           _--^^^#####//      \\#####^^^--_
+ *        _-^##########// (    ) \\##########^-_
+ *       -############//  |\^^/|  \\############-
+ *     _/############//   (@::@)   \\############\_
+ *    /#############((     \\//     ))#############\
+ *   -###############\\    (oo)    //###############-
+ *  -#################\\  / VV \  //#################-
+ * -###################\\/      \//###################-
+ *_#/|##########/\######(   /\   )######/\##########|\#_
+ *|/ |#/\#/\#/\/  \#/\##\  |  |  /##/\#/  \/\#/\#/\#| \|
+ *`  |/  V  V  `   V  \#\| |  | |/#/  V   '  V  V  \|  '
+ *   `   `  `      `   / | |  | | \   '      '  '   '
+ *                    (  | |  | |  )
+ *                   __\ | |  | | /__
+ *                  (vvv(VVV)(VVV)vvv)
+ * <配置 OAuth2RestTemplate>
+ * @author baily
+ * @since 1.0
+ * @date 2019/7/7
+ **/
 @Configuration
 public class OAuth2RestTemplateConfiguration {
     @Bean

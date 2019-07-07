@@ -16,11 +16,28 @@ import org.springframework.util.ObjectUtils;
 import javax.annotation.Resource;
 
 /**
- <p>
- 服务实现类
- </p>
- @author ${author}
- @since 2019-05-17 */
+ *
+ *                 ___====-_  _-====___
+ *           _--^^^#####//      \\#####^^^--_
+ *        _-^##########// (    ) \\##########^-_
+ *       -############//  |\^^/|  \\############-
+ *     _/############//   (@::@)   \\############\_
+ *    /#############((     \\//     ))#############\
+ *   -###############\\    (oo)    //###############-
+ *  -#################\\  / VV \  //#################-
+ * -###################\\/      \//###################-
+ *_#/|##########/\######(   /\   )######/\##########|\#_
+ *|/ |#/\#/\#/\/  \#/\##\  |  |  /##/\#/  \/\#/\#/\#| \|
+ *`  |/  V  V  `   V  \#\| |  | |/#/  V   '  V  V  \|  '
+ *   `   `  `      `   / | |  | | \   '      '  '   '
+ *                    (  | |  | |  )
+ *                   __\ | |  | | /__
+ *                  (vvv(VVV)(VVV)vvv)
+ * <报销服务类>
+ * @author baily
+ * @since 1.0
+ * @date 2019/7/7
+ **/
 @Service
 public class ReimbursementServiceImpl extends ServiceImpl<ReimbursementMapper, Reimbursement> implements ReimbursementService {
     public static final String PROCESSDEFINITIONKEY = "REIMBURSEMENT";

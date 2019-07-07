@@ -28,6 +28,8 @@ import javax.servlet.http.HttpServletResponse;
  *                   `=---='
  *^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
  *            佛祖保佑       永无BUG
+ * @author baily
+ * @since 2019-7-1
  **/
 @Configuration
 @EnableResourceServer

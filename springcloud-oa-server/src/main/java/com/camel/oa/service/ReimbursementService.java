@@ -42,11 +42,32 @@ public interface ReimbursementService extends IService<Reimbursement> {
      */
     Result current(String id);
 
+    /**
+     * 通过
+     * @param id
+     * @param activitiForm
+     * @return
+     */
     Result pass(String id, ActivitiForm activitiForm);
 
+    /**
+     * 驳回
+     * @param id
+     * @param activitiForm
+     * @return
+     */
     Result back(String id, ActivitiForm activitiForm);
 
+    /**
+     * 添加审核意见
+     * @param id
+     * @return
+     */
     Result comment(String id);
 
+    /**
+     * 获取代办事项
+     * @return
+     */
     Result toDO();
 }

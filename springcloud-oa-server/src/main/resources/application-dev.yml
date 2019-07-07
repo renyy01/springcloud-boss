@@ -1,6 +1,6 @@
 spring:
   application:
-    name: springcloud-oa
+    name: springcloud-oa-server
   datasource:
     url: jdbc:mysql://${APPLICATION_IP}:3306/dw_service?useUnicode=true&characterEncoding=utf8&useSSL=true&serverTimezone=UTC
     username: root
@@ -23,7 +23,7 @@ eureka:
 security:
   oauth2:
     resource:
-      id: springcloud-oa
+      id: springcloud-oa-server
       user-info-uri: http://${APPLICATION_IP}:8080/auth/session/me
       prefer-token-info: false
 

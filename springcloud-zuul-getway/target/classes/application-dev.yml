@@ -39,11 +39,11 @@ zuul:
       sensitiveHeaders: "*"
     bpm:
       path: /bpm/**
-      serviceId: springcloud-bpm
+      serviceId: springcloud-bpm-server
       sensitiveHeaders: "*"
     oa:
       path: /oa/**
-      serviceId: springcloud-oa
+      serviceId: springcloud-oa-server
       sensitiveHeaders: "*"
   retryable: false
   ignored-services: "*"

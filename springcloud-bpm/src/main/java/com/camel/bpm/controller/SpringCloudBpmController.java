@@ -3,20 +3,18 @@ package com.camel.bpm.controller;
 import com.camel.bpm.exceptions.WorkFlowImageGenerateFaildException;
 import com.camel.bpm.model.WorkFlow;
 import com.camel.bpm.service.BpmService;
+import com.camel.common.utils.IoUtils;
 import com.camel.core.entity.Result;
 import com.camel.core.entity.process.ActivitiForm;
 import com.camel.core.entity.process.UserTask;
-import com.camel.common.utils.IoUtils;
 import com.camel.core.utils.ResultUtil;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.activiti.engine.ProcessEngine;
-import org.activiti.engine.impl.identity.Authentication;
 import org.activiti.engine.repository.Deployment;
 import org.activiti.engine.runtime.ProcessInstance;
 import org.activiti.engine.task.Task;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.oauth2.provider.OAuth2Authentication;
-import org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationDetails;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.ObjectUtils;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -29,7 +27,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.security.Principal;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  @author baily */

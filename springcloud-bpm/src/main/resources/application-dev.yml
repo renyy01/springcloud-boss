@@ -1,6 +1,6 @@
 spring:
   application:
-    name: springcloud-bpm
+    name: springcloud-bpm-server
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://${APPLICATION_IP}:3306/dw_bpm?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowMultiQueries=true
@@ -21,7 +21,7 @@ eureka:
 security:
   oauth2:
     resource:
-      id: springcloud-bpm
+      id: springcloud-bpm-server
       user-info-uri: http://${APPLICATION_IP}:8080/auth/session/me
       prefer-token-info: false
 

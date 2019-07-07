@@ -39,11 +39,11 @@ zuul:
       sensitiveHeaders: "*"
     bpm:
       path: /bpm/**
-      serviceId: springcloud-bpm
+      serviceId: springcloud-bpm-server
       sensitiveHeaders: "*"
     oa:
       path: /oa/**
-      serviceId: springcloud-oa
+      serviceId: springcloud-oa-server
       sensitiveHeaders: "*"
   retryable: false
   ignored-services: "*"
@@ -51,8 +51,8 @@ zuul:
     eager-load:
       enabled: true
   host:
-    connect-timeout-millis: 3000
-    socket-timeout-millis: 3000
+    connect-timeout-millis: 8000
+    socket-timeout-millis: 5000
   add-proxy-headers: true
 
 
@@ -71,8 +71,8 @@ security:
 ribbon:
   ReadTimeout: 6000
   ConnectTimeout: 6000
-  MaxAutoRetries: 2
-  MaxAutoRetriesNextServer: 3
+  MaxAutoRetries: 2             # 对当前实例的重试次数
+  MaxAutoRetriesNextServer: 3   # 切换实例重试次数
   eureka:
     enabled: true
 hystrix:
@@ -80,7 +80,7 @@ hystrix:
     default:
       execution:
         timeout:
-          enabled: true
+          enabled: true                   # 如果enabled设置为false，则请求超时交给ribbon控制,为true,则超时作为熔断根据
         isolation:
           thread:
-            timeoutInMilliseconds: 3500
+            timeoutInMilliseconds: 5000   # 断路器超时时间

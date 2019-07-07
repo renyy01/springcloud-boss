@@ -16,6 +16,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.RedisConnectionFailureException;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
@@ -46,15 +48,14 @@ public class LogAspect {
         Object result = joinPoint.proceed();
         //执行时长(毫秒)
         long time = System.currentTimeMillis() - beginTime;
-        RedisUser sysUser = new RedisUser();
-        try{
-            ValueOperations<Serializable, Object> operations = redisTemplate.opsForValue();
-            byte[] cu = (byte[]) operations.get("CURRENT_USER");
-            sysUser = (RedisUser) SerizlizeUtil.unserizlize(cu);
-        }catch (Exception e){
+        String username = "";
+        try {
+            username = (String) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+
+        } catch (Exception e) {
             throw new RedisConnectionFailureException("未发现可用的Redis服务器！请检查");
         }
-        SysLog sysLog = new SysLog(sysUser.getId(), sysUser.getUsername(), log.option(), time, joinPoint.getArgs().toString(), joinPoint.getSignature().toShortString(), joinPoint.getArgs().toString(), log.moduleName());
+        SysLog sysLog = new SysLog(null, username, log.option(), time, joinPoint.getArgs().toString(), joinPoint.getSignature().toShortString(), joinPoint.getArgs().toString(), log.moduleName());
         sysLogService.insert(sysLog);
         LOGGER.info("==============================================用户操作日志-通知结束执行......==========================================");
         return result;

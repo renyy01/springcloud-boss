@@ -45,7 +45,7 @@ import java.util.Set;
  * @date 2019/7/4
  **/
 @Service("userDetailService")
-public class MyUserDetailService implements UserDetailsService {
+public class MyUserDetailServiceImpl implements UserDetailsService {
 
     @Autowired
     private SysUserDao sysUserDao;

@@ -12,10 +12,6 @@ import java.security.Principal;
 public class SessionController {
     @GetMapping("/me")
     public Principal me(HttpSession session, Principal principal) {
-        if (session.getAttribute("test") == null) {
-            session.setAttribute("test", "123123");
-        }
-        System.out.println(session.getAttribute("test"));
         return principal;
     }
 }

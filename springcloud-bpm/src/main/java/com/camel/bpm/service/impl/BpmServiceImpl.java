@@ -58,6 +58,8 @@ public class BpmServiceImpl implements BpmService {
 
     public static final String PROCESS_NAME_SUFFIX = ".bpmn";
 
+    public static final String END_TAG = "END";
+
     @Autowired
     private RepositoryService repositoryService;
 
@@ -409,7 +411,7 @@ public class BpmServiceImpl implements BpmService {
         }
 
         // 根据流程定义，获取该流程实例的结束节点
-        if (activityId.toUpperCase().equals("END")) {
+        if (StringUtils.equals(activityId.toUpperCase(), END_TAG)) {
             for (ActivityImpl activityImpl : processDefinition.getActivities()) {
                 List<PvmTransition> pvmTransitionList = activityImpl
                         .getOutgoingTransitions();

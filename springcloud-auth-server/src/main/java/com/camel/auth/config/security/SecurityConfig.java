@@ -1,6 +1,6 @@
 package com.camel.auth.config.security;
 
-import com.camel.auth.service.MyUserDetailService;
+import com.camel.auth.service.MyUserDetailServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -40,7 +40,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @Order(2)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
-    private MyUserDetailService userDetailService;
+    private MyUserDetailServiceImpl userDetailService;
 
     @Bean
     public PasswordEncoder passwordEncoder() {

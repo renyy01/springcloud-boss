@@ -1,6 +1,6 @@
 package com.camel.auth.config.oauth;
 
-import com.camel.auth.service.MyUserDetailService;
+import com.camel.auth.service.MyUserDetailServiceImpl;
 import com.camel.auth.config.error.MssWebResponseExceptionTranslator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -58,7 +58,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     private RedisConnectionFactory redisConnectionFactory;
 
     @Autowired
-    private MyUserDetailService userDetailService;
+    private MyUserDetailServiceImpl userDetailService;
 
     @Bean
     public TokenStore tokenStore() {
@@ -119,7 +119,6 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
         DefaultTokenServices tokenServices = new DefaultTokenServices();
         tokenServices.setTokenStore(tokenStore());
         tokenServices.setSupportRefreshToken(true);
-        //tokenServices.setClientDetailsService(clientDetails());
         // token有效期自定义设置，默认12小时
         tokenServices.setAccessTokenValiditySeconds(60*60*12);
         // refresh_token默认30天

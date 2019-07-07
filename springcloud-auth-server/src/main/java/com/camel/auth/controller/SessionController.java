@@ -1,12 +1,15 @@
 package com.camel.auth.controller;
 
 import com.camel.auth.config.oauth.RedisTokenStore;
-import com.camel.auth.service.MyUserDetailService;
+import com.camel.auth.service.MyUserDetailServiceImpl;
 import com.camel.common.entity.Result;
 import com.camel.common.enumeration.ResultCode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.oauth2.provider.token.ConsumerTokenServices;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.security.Principal;
 
@@ -38,7 +41,7 @@ import java.security.Principal;
 public class SessionController {
 
     @Autowired
-    private MyUserDetailService userDetailService;
+    private MyUserDetailServiceImpl userDetailService;
 
     @Autowired
     private ConsumerTokenServices consumerTokenServices;

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.camel.oa.mapper.ErrandMapper">
+    <resultMap id="BaseResultMAp" type="com.camel.oa.model.Errand">
+        <id column="id" property="id" jdbcType="INTEGER"></id>
+        <result column="eno" property="eno" jdbcType="VARCHAR"></result>
+        <result column="uid" property="uid" jdbcType="INTEGER"></result>
+        <result column="target" property="target" jdbcType="VARCHAR"></result>
+        <result column="status" property="status" jdbcType="INTEGER"></result>
+        <result column="dateRange" property="dateRange" jdbcType="VARCHAR"></result>
+    </resultMap>
+
+    <sql id="BASE_SQL">
+        errand.id,
+        errand.eno,
+        errand.uid,
+        errand.target,
+        errand.dateRange,
+        errand.`status`
+    </sql>
+
+    <select id="list" resultMap="BaseResultMAp">
+        SELECT <include refid="BASE_SQL"></include>
+        FROM errand
+    </select>
+</mapper>

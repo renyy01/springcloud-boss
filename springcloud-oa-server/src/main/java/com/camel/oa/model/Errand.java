@@ -1,10 +1,12 @@
 package com.camel.oa.model;
 
-import com.baomidou.mybatisplus.annotations.TableField;
+import com.baomidou.mybatisplus.annotations.TableId;
+import com.baomidou.mybatisplus.enums.IdType;
 import com.camel.core.entity.BaseProcessPaginationEntity;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.sql.Date;
 
 /**
  *
@@ -37,38 +39,113 @@ public class Errand extends BaseProcessPaginationEntity implements Serializable 
     /**
      * 主键
      */
+    @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
+    /**
+     * 编号
+     */
+    private String eno;
     /**
      * 人员
      */
     private Integer uid;
     /**
-     * 编号
-     */
-    private Integer eno;
-    /**
      * 目的地
      */
     private String target;
     /**
-     * 差期
+     * 差期开始
      */
-    @TableField("dateRange")
-    private String dateRange;
+    private Date dateRangeStart;
+    /**
+     * 差期结束
+     */
+    private Date dateRangeEnd;
     /**
      * 状态
      */
     private Integer status;
+    /**
+     * 部门
+     */
+    private Integer orgId;
+    /**
+     * 申请时间
+     */
+    private Date applyDate;
+    /**
+     * 事由类型
+     */
+    private Integer planType;
+    /**
+     * 目的和计划
+     */
+    private String plan;
+    /**
+     * 部门负责人
+     */
+    private Integer director;
+    /**
+     * 部门负责人意见
+     */
+    private String directorComment;
+    /**
+     * 分管领导
+     */
+    private Integer leader;
+    /**
+     * 分管领导意见
+     */
+    private String leaderComment;
+    /**
+     * 运营管理
+     */
+    private Integer operator;
+    /**
+     * 运营管理确认意见
+     */
+    private String operatorComment;
+    /**
+     * 人力资源
+     */
+    private Integer resources;
+    /**
+     * 人力资源意见
+     */
+    private String resourcesComment;
+    /**
+     * 总经理
+     */
+    private Integer manager;
+    /**
+     * 总经理意见
+     */
+    private String managerComment;
 
     @Override
     public String toString() {
         return "Errand{" +
                 ", id=" + id +
+                ", eno=" + eno +
                 ", uid=" + uid +
-                ", id=" + eno +
                 ", target=" + target +
-                ", dateRange=" + dateRange +
+                ", dateRangeStart=" + dateRangeStart +
+                ", dateRangeEnd=" + dateRangeEnd +
                 ", status=" + status +
+                ", orgId=" + orgId +
+                ", applyDate=" + applyDate +
+                ", planType=" + planType +
+                ", plan=" + plan +
+                ", director=" + director +
+                ", directorComment=" + directorComment +
+                ", leader=" + leader +
+                ", leaderComment=" + leaderComment +
+                ", operator=" + operator +
+                ", operatorComment=" + operatorComment +
+                ", resources=" + resources +
+                ", resourcesComment=" + resourcesComment +
+                ", manager=" + manager +
+                ", managerComment=" + managerComment +
                 "}";
     }
 }

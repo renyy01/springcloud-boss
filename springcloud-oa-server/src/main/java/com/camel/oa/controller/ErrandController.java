@@ -8,9 +8,9 @@ import com.camel.core.utils.ResultUtil;
 import com.camel.oa.model.Errand;
 import com.camel.oa.service.ErrandService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.UUID;
 
 /**
  *
@@ -49,7 +49,11 @@ public class ErrandController extends BaseCommonController {
         return ResultUtil.success(errandService.selectPage(errand));
     }
 
-
+    @PostMapping
+    public Result save(@RequestBody Errand errand) {
+        errand.setEno(UUID.randomUUID().toString());
+        return super.save(errand);
+    }
 
     @Override
     public IService getiService() {

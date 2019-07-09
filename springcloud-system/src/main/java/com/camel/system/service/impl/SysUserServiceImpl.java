@@ -93,4 +93,10 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
         list.addAll(lhs);
         return list;
     }
+
+    @Override
+    public List<SysUser> all(SysUser user) {
+        Wrapper<SysUser> userWrapper = new EntityWrapper<>();
+        return mapper.selectList(userWrapper);
+    }
 }

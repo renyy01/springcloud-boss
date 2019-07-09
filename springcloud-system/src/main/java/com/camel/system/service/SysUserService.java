@@ -4,6 +4,8 @@ import com.baomidou.mybatisplus.service.IService;
 import com.camel.system.model.SysUser;
 import com.github.pagehelper.PageInfo;
 
+import java.util.List;
+
 /**
  * <p>
  *  服务类
@@ -40,4 +42,6 @@ public interface SysUserService extends IService<SysUser> {
      * @return
      */
     boolean addRoles(SysUser user);
+
+    List<SysUser> all(SysUser user);
 }

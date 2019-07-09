@@ -101,6 +101,11 @@ public class SysUserController extends BaseCommonController {
         return ResultUtil.success(sysUser);
     }
 
+    @GetMapping("/all")
+    public Result all(SysUser user){
+        return ResultUtil.success(service.all(user));
+    }
+
     @Override
     public IService getiService() {
         return service;

@@ -4,12 +4,14 @@
     <resultMap id="BaseResultMAp" type="com.camel.oa.model.Errand">
         <id column="id" property="id" jdbcType="INTEGER"></id>
         <result column="eno" property="eno" jdbcType="VARCHAR"></result>
+        <result column="username" property="username" jdbcType="VARCHAR"></result>
         <result column="uid" property="uid" jdbcType="INTEGER"></result>
         <result column="target" property="target" jdbcType="VARCHAR"></result>
         <result column="status" property="status" jdbcType="INTEGER"></result>
         <result column="date_range_start" property="dateRangeStart" jdbcType="VARCHAR"></result>
         <result column="date_range_end" property="dateRangeEnd" jdbcType="VARCHAR"></result>
         <result column="org_id" property="orgId" jdbcType="VARCHAR"></result>
+        <result column="org_name" property="orgName" jdbcType="VARCHAR"></result>
         <result column="apply_date" property="applyDate" jdbcType="VARCHAR"></result>
         <result column="plan_type" property="planType" jdbcType="VARCHAR"></result>
         <result column="plan" property="plan" jdbcType="VARCHAR"></result>
@@ -29,11 +31,13 @@
         errand.id,
         errand.eno,
         errand.uid,
+        errand.username,
         errand.target,
         errand.date_range_start,
         errand.date_range_end,
         errand.`status`,
         errand.org_id,
+        errand.org_name,
         errand.apply_date,
         errand.plan_type,
         errand.plan,

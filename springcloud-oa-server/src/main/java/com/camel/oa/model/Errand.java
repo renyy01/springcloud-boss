@@ -50,6 +50,10 @@ public class Errand extends BaseProcessPaginationEntity implements Serializable 
      */
     private Integer uid;
     /**
+     * 姓名
+     */
+    private String username;
+    /**
      * 目的地
      */
     private String target;
@@ -69,6 +73,10 @@ public class Errand extends BaseProcessPaginationEntity implements Serializable 
      * 部门
      */
     private Integer orgId;
+    /**
+     * 部门
+     */
+    private String orgName;
     /**
      * 申请时间
      */

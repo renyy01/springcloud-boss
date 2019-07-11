@@ -40,6 +40,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.oauth2.provider.OAuth2Authentication;
 import org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationDetails;
 import org.springframework.stereotype.Service;
@@ -341,7 +342,7 @@ public class BpmServiceImpl implements BpmService {
     @Override
     public boolean passProcess(String taskId, Map<String, Object> variables, ActivitiEndCallBack activitiEndCallBack) {
         variables.put("isPass", true);
-        Authentication.setAuthenticatedUserId(SessionContextUtils.getInstance().currentUser(redisTemplate).getUsername());
+        Authentication.setAuthenticatedUserId((String) SecurityContextHolder.getContext().getAuthentication().getPrincipal());
         taskService.addComment(taskId, null, (String) variables.get("comment"));
         try {
             commitProcess(taskId, variables, null);
@@ -565,6 +566,7 @@ public class BpmServiceImpl implements BpmService {
         authentication.getAuthorities().forEach(grantedAuthority -> {
 //            SimpleGrantedAuthority simpleGrantedAuthority = (SimpleGrantedAuthority)grantedAuthority;
             authrities.add(grantedAuthority.getAuthority().toUpperCase());
+            authrities.add(grantedAuthority.getAuthority());
         });
         List<Task> tasks = taskService.createTaskQuery().active().taskCandidateGroupIn(authrities).list();
         List<UserTask> userTasks = ActivitiObj2SystemObjUtils.getInstance().tasks2UserTasks(tasks);

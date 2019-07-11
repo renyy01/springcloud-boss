@@ -4,6 +4,7 @@ import com.camel.redis.entity.RedisUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
+import sun.plugin.liveconnect.SecurityContextHelper;
 
 import java.io.Serializable;
 
@@ -38,10 +39,9 @@ public class SessionContextUtils {
 
     public static SessionContextUtils getInstance(){return INSTANCE;}
 
-    public RedisUser currentUser(RedisTemplate redisTemplate){
+    public Object currentUser(RedisTemplate redisTemplate, String key){
         ValueOperations<Serializable, Object> operations = redisTemplate.opsForValue();
-        byte[] cu = (byte[]) operations.get("CURRENT_USER");
-        RedisUser sysUser = (RedisUser) SerizlizeUtil.unserizlize(cu);
-        return sysUser;
+        byte[] cu = (byte[]) operations.get(key);
+        return SerizlizeUtil.unserizlize(cu);
     }
 }

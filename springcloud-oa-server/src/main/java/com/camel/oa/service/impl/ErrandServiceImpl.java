@@ -4,13 +4,10 @@ import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.camel.core.utils.PaginationUtil;
 import com.camel.oa.mapper.ErrandMapper;
 import com.camel.oa.model.Errand;
-import com.camel.oa.model.Reimbursement;
 import com.camel.oa.service.ErrandService;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.UUID;
 
 /**
  *
@@ -41,7 +38,7 @@ public class ErrandServiceImpl extends ServiceImpl<ErrandMapper, Errand> impleme
     private ErrandMapper mapper;
 
     @Override
-    public PageInfo<Reimbursement> selectPage(Errand entity) {
+    public PageInfo<Errand> selectPage(Errand entity) {
         PageInfo pageInfo = PaginationUtil.startPage(entity, () -> {
             mapper.list(entity);
         });

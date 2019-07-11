@@ -1,6 +1,4 @@
-package com.camel.bpm.enums;
-
-import org.springframework.util.ObjectUtils;
+package com.camel.oa.enums;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -31,37 +29,31 @@ import java.util.Map;
  *     ┗┓┓┏━━━━━━┳┓┏┛
  *      ┃┫┫      ┃┫┫
  *      ┗┻┛      ┗┻┛
- * @since 2018年08月17日
+ * @since 2018年08月15日
  */
-public enum WorkFlowType {
-    /* */
-    FLOW_NORMAL("普通流程", 1),
-    FINANCE("财务流程", 2),
-    REIMBURSEMENT("报销流程", 3),
-    ERRAND_APPLY("出差申请流程", 4);
+
+public enum ErrandStatus {
+    /**/
+    CREATED("创建", 1),
+    APPLY("申请中", 2),
+    APPLY_SUCCESS("申请成功", 3),
+    APPLY_FAILD("申请失败", 4);
+
 
     private String name;
     private Integer value;
+
+    ErrandStatus(String name, Integer value) {
+        this.name = name;
+        this.value = value;
+    }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public Integer getValue() {
         return value;
-    }
-
-    public void setValue(Integer value) {
-        this.value = value;
-    }
-
-    WorkFlowType(String name, Integer value) {
-        this.name = name;
-        this.value = value;
     }
 
     public Map getValueMap() {
@@ -73,21 +65,9 @@ public enum WorkFlowType {
 
     public static List all() {
         List list = new ArrayList<>();
-        for (WorkFlowType flowType : WorkFlowType.values()) {
-            list.add(flowType.getValueMap());
+        for (ErrandStatus reimbursementStatus : ErrandStatus.values()) {
+            list.add(reimbursementStatus.getValueMap());
         }
         return list;
-    }
-
-    public static WorkFlowType valueToEm(Integer value) {
-        if (ObjectUtils.isEmpty(value)) {
-            return null;
-        }
-        for (WorkFlowType flowType : WorkFlowType.values()) {
-            if (flowType.getValue().equals(value)) {
-                return flowType;
-            }
-        }
-        return null;
     }
 }

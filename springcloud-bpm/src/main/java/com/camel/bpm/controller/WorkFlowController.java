@@ -7,6 +7,7 @@ import com.camel.bpm.enums.WorkFlowType;
 import com.camel.bpm.exceptions.UnAuthenticationException;
 import com.camel.bpm.model.WorkFlow;
 import com.camel.bpm.service.WorkFlowService;
+import com.camel.common.entity.Member;
 import com.camel.core.controller.BaseCommonController;
 import com.camel.core.entity.Result;
 import com.camel.common.enums.ResultEnum;
@@ -16,6 +17,7 @@ import com.camel.redis.utils.SerizlizeUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.util.ObjectUtils;
 import org.springframework.web.bind.annotation.*;
 
@@ -60,8 +62,8 @@ public class WorkFlowController extends BaseCommonController {
     @PostMapping
     public Result create(@RequestBody WorkFlow workFlow, Principal principal) throws UnAuthenticationException {
         ValueOperations<Serializable, Object> operations = redisTemplate.opsForValue();
-        byte[] cu = (byte[]) operations.get("CURRENT_USER");
-        RedisUser currentUser = (RedisUser) SerizlizeUtil.unserizlize(cu);
+        byte[] cu = (byte[]) operations.get(principal.getName().toUpperCase() + "@CAMEL.COM");
+        Member currentUser = (Member) SerizlizeUtil.unserizlize(cu);
         if (ObjectUtils.isEmpty(currentUser)) {
             throw new UnAuthenticationException("当前用户不存在");
         }

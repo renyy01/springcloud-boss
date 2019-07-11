@@ -2,6 +2,7 @@ package com.camel.common.entity;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.Set;
 
@@ -13,7 +14,8 @@ import java.util.Set;
  * @since 1.0.0
  */
 @Data
-public class Member{
+public class Member implements Serializable {
+    private long serialVersionUID = 1L;
 
     private int id;
     private String memberName;
@@ -25,4 +27,8 @@ public class Member{
     private Date createTime;
     private Set<Role> roles;
 
+    public Member(int id, String memberName) {
+        this.id = id;
+        this.memberName = memberName;
+    }
 }

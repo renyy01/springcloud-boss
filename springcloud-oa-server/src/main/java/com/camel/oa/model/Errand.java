@@ -7,6 +7,7 @@ import lombok.Data;
 
 import java.io.Serializable;
 import java.sql.Date;
+import java.sql.Timestamp;
 
 /**
  *
@@ -60,11 +61,11 @@ public class Errand extends BaseProcessPaginationEntity implements Serializable 
     /**
      * 差期开始
      */
-    private Date dateRangeStart;
+    private Timestamp dateRangeStart;
     /**
      * 差期结束
      */
-    private Date dateRangeEnd;
+    private Timestamp dateRangeEnd;
     /**
      * 状态
      */
@@ -129,6 +130,18 @@ public class Errand extends BaseProcessPaginationEntity implements Serializable 
      * 总经理意见
      */
     private String managerComment;
+
+    public Errand() {
+    }
+
+    public Errand(Integer id) {
+        this.id = id;
+    }
+
+    public Errand(Integer id, Integer status) {
+        this.id = id;
+        this.status = status;
+    }
 
     @Override
     public String toString() {

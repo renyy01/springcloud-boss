@@ -1,6 +1,7 @@
 package com.camel.oa.service;
 
 import com.baomidou.mybatisplus.service.IService;
+import com.camel.core.entity.Result;
 import com.camel.oa.model.Errand;
 import com.camel.oa.model.Reimbursement;
 import com.github.pagehelper.PageInfo;
@@ -35,5 +36,5 @@ public interface ErrandService extends IService<Errand> {
      @param entity
      @return
      */
-    PageInfo<Reimbursement> selectPage(Errand entity);
+    PageInfo<Errand> selectPage(Errand entity);
 }

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.camel.oa.mapper.OutRegisterMapper" >
+  <resultMap id="BaseResultMap" type="com.camel.oa.model.OutRegister" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="uid" property="uid" jdbcType="INTEGER" />
+    <result column="org_id" property="orgId" jdbcType="INTEGER" />
+    <result column="out_start" property="outStart" jdbcType="TIMESTAMP" />
+    <result column="out_interval" property="outInterval" jdbcType="INTEGER" />
+    <result column="out_end" property="outEnd" jdbcType="TIMESTAMP" />
+    <result column="user_name" property="userName" jdbcType="VARCHAR" />
+    <result column="org_name" property="orgName" jdbcType="VARCHAR" />
+    <result column="out_place" property="outPlace" jdbcType="VARCHAR" />
+    <result column="out_reason" property="outReason" jdbcType="VARCHAR" />
+    <result column="status" property="status" jdbcType="VARCHAR" />
+    <result column="org_director" property="orgDirector" jdbcType="VARCHAR" />
+    <result column="valid_flag" property="validFlag" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, uid, org_id, out_start, out_interval, out_end, user_name, org_name, out_place, 
+    out_reason, status, org_director, valid_flag
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from out_register
+    where uid = #{uid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from out_register
+    where uid = #{uid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.camel.oa.model.OutRegister" >
+    insert into out_register (id, uid, org_id, 
+      out_start, out_interval, out_end, 
+      user_name, org_name, out_place, 
+      out_reason, status, org_director, valid_flag
+      )
+    values (#{id,jdbcType=INTEGER}, #{uid,jdbcType=INTEGER}, #{orgId,jdbcType=INTEGER}, 
+      #{outStart,jdbcType=TIMESTAMP}, #{outInterval,jdbcType=INTEGER}, #{outEnd,jdbcType=TIMESTAMP}, 
+      #{userName,jdbcType=VARCHAR}, #{orgName,jdbcType=VARCHAR}, #{outPlace,jdbcType=VARCHAR}, 
+      #{outReason,jdbcType=VARCHAR}, #{status,jdbcType=VARCHAR}, #{orgDirector,jdbcType=VARCHAR},
+      #{validFlag,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.camel.oa.model.OutRegister" >
+    insert into out_register
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="uid != null" >
+        uid,
+      </if>
+      <if test="orgId != null" >
+        org_id,
+      </if>
+      <if test="outStart != null" >
+        out_start,
+      </if>
+      <if test="outInterval != null" >
+        out_interval,
+      </if>
+      <if test="outEnd != null" >
+        out_end,
+      </if>
+      <if test="userName != null" >
+        user_name,
+      </if>
+      <if test="orgName != null" >
+        org_name,
+      </if>
+      <if test="outPlace != null" >
+        out_place,
+      </if>
+      <if test="outReason != null" >
+        out_reason,
+      </if>
+      <if test="status != null" >
+        status,
+      </if>
+      <if test="orgDirector != null" >
+        org_director,
+      </if>
+      <if test="validFlag != null" >
+        valid_flag,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="uid != null" >
+        #{uid,jdbcType=INTEGER},
+      </if>
+      <if test="orgId != null" >
+        #{orgId,jdbcType=INTEGER},
+      </if>
+      <if test="outStart != null" >
+        #{outStart,jdbcType=TIMESTAMP},
+      </if>
+      <if test="outInterval != null" >
+        #{outInterval,jdbcType=INTEGER},
+      </if>
+      <if test="outEnd != null" >
+        #{outEnd,jdbcType=TIMESTAMP},
+      </if>
+      <if test="userName != null" >
+        #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="orgName != null" >
+        #{orgName,jdbcType=VARCHAR},
+      </if>
+      <if test="outPlace != null" >
+        #{outPlace,jdbcType=VARCHAR},
+      </if>
+      <if test="outReason != null" >
+        #{outReason,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=VARCHAR},
+      </if>
+      <if test="orgDirector != null" >
+        #{orgDirector,jdbcType=VARCHAR},
+      </if>
+      <if test="validFlag != null" >
+        #{validFlag,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.camel.oa.model.OutRegister" >
+    update out_register
+    <set >
+      <if test="uid != null" >
+        uid = #{uid,jdbcType=INTEGER},
+      </if>
+      <if test="orgId != null" >
+        org_id = #{orgId,jdbcType=INTEGER},
+      </if>
+      <if test="outStart != null" >
+        out_start = #{outStart,jdbcType=TIMESTAMP},
+      </if>
+      <if test="outInterval != null" >
+        out_interval = #{outInterval,jdbcType=INTEGER},
+      </if>
+      <if test="outEnd != null" >
+        out_end = #{outEnd,jdbcType=TIMESTAMP},
+      </if>
+      <if test="userName != null" >
+        user_name = #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="orgName != null" >
+        org_name = #{orgName,jdbcType=VARCHAR},
+      </if>
+      <if test="outPlace != null" >
+        out_place = #{outPlace,jdbcType=VARCHAR},
+      </if>
+      <if test="outReason != null" >
+        out_reason = #{outReason,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null" >
+        status = #{status,jdbcType=VARCHAR},
+      </if>
+      <if test="orgDirector != null" >
+        org_director = #{orgDirector,jdbcType=VARCHAR},
+      </if>
+      <if test="validFlag != null" >
+        valid_flag = #{validFlag,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where uid = #{uid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.camel.oa.model.OutRegister" >
+    update out_register
+    set uid = #{uid,jdbcType=INTEGER},
+      org_id = #{orgId,jdbcType=INTEGER},
+      out_start = #{outStart,jdbcType=TIMESTAMP},
+      out_interval = #{outInterval,jdbcType=INTEGER},
+      out_end = #{outEnd,jdbcType=TIMESTAMP},
+      user_name = #{userName,jdbcType=VARCHAR},
+      org_name = #{orgName,jdbcType=VARCHAR},
+      out_place = #{outPlace,jdbcType=VARCHAR},
+      out_reason = #{outReason,jdbcType=VARCHAR},
+      status = #{status,jdbcType=VARCHAR},
+      org_director = #{orgDirector,jdbcType=VARCHAR},
+      valid_flag = #{validFlag,jdbcType=VARCHAR}
+    where uid = #{uid,jdbcType=INTEGER}
+  </update>
+<!--根据条件查询某部门下参与登记注册的人-->
+  <select id="outList" resultMap="BaseResultMAp">
+    SELECT
+    <include refid="Base_Column_List"/>
+    FROM out_register
+    <where>
+     valid_flag = '1'
+    <if test="user_name != null and user_name != ''">
+      AND user_name LIKE CONCAT('%', #{userName}, '%')
+    </if>
+    <if test="user_name != null and user_name != ''">
+      AND org_id = #{orgId}
+    </if>
+    <if test="outStart != null and outStart != ''">
+      AND out_start &gt;= #{outStart}
+    </if>
+    <if test="outStart != null and outStart != ''">
+      AND out_end &lt;= #{outEnd}
+    </if>
+    </where>
+    ORDER BY out_start DESC
+  </select>
+</mapper>

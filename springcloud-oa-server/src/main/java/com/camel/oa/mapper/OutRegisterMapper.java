@@ -1,12 +1,16 @@
 package com.camel.oa.mapper;
 
+import com.baomidou.mybatisplus.mapper.BaseMapper;
 import com.camel.oa.model.OutRegister;
+import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
+
 import java.util.List;
 
-public interface OutRegisterMapper {
+@Mapper
+@Repository
+public interface OutRegisterMapper extends BaseMapper<OutRegister> {
     int deleteByPrimaryKey(Integer id);
-
-    int insert(OutRegister record);
 
     int insertSelective(OutRegister record);
 
@@ -17,4 +21,6 @@ public interface OutRegisterMapper {
     int updateByPrimaryKey(OutRegister record);
 
     List<OutRegister> outList(OutRegister outRegister);
+
+    int deleteById (Integer id);
 }

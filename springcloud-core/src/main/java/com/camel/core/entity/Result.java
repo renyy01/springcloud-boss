@@ -10,6 +10,8 @@ public class Result {
     private Object data;
     private boolean success;
 
+    public Result(){}
+
     public Result(Integer code, String msg, Object data, boolean success) {
         this.code = code;
         this.msg = msg;

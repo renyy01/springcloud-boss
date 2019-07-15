@@ -24,11 +24,11 @@
     select 
     <include refid="Base_Column_List" />
     from out_register
-    where uid = #{uid,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from out_register
-    where uid = #{uid,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.camel.oa.model.OutRegister" >
     insert into out_register (id, uid, org_id, 
@@ -168,7 +168,7 @@
         valid_flag = #{validFlag,jdbcType=VARCHAR},
       </if>
     </set>
-    where uid = #{uid,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.camel.oa.model.OutRegister" >
     update out_register
@@ -184,7 +184,7 @@
       status = #{status,jdbcType=VARCHAR},
       org_director = #{orgDirector,jdbcType=VARCHAR},
       valid_flag = #{validFlag,jdbcType=VARCHAR}
-    where uid = #{uid,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
   </update>
 <!--根据条件查询某部门下参与登记注册的人-->
   <select id="outList" resultMap="BaseResultMAp">
@@ -208,4 +208,9 @@
     </where>
     ORDER BY out_start DESC
   </select>
+<!--逻辑删除或批量删除-->
+  <update id="deleteById" parameterType="java.lang.Integer" >
+    update out_register valid_flag = '0'
+    where id = #{id,jdbcType=INTEGER}
+  </update>
 </mapper>

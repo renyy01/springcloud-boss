@@ -199,6 +199,12 @@
     <if test="user_name != null and user_name != ''">
       AND org_id = #{orgId}
     </if>
+<!--    <if test="ids !=null">-->
+<!--      AND id in-->
+<!--      <foreach collection="ids" item="item" index="index" open="(" separator="," close=")">-->
+<!--        #{item}-->
+<!--      </foreach>-->
+<!--    </if>-->
     <if test="outStart != null and outStart != ''">
       AND out_start &gt;= #{outStart}
     </if>

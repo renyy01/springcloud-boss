@@ -66,13 +66,13 @@ public class OutRegisterController extends BaseCommonController {
 
     /**
      * @MethodName outList
-     * @Description //根据条件查询某部门下参与登记注册的人
+     * @Description //根据条件查询某部门下参与登记的人
      * @Author renyy
      * @Date 2019/7/15 9:45
      * @Param [outRegister]
      * @return com.camel.core.entity.Result
      */
-    @GetMapping
+    @RequestMapping
     @ResponseBody
     public Result outList(OutRegister outRegister){
         String username = (String) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
@@ -82,10 +82,10 @@ public class OutRegisterController extends BaseCommonController {
         for(int i=0;i<userList.size();i++){
             arr[i] = userList.get(i).getOrgDirector();
         }
-        if (Arrays.asList(arr).contains(username)){
+        if (Arrays.asList(arr).contains(member.getMemberName())){
             return ResultUtil.success(outRegisterService.selectPage(outRegister));
         }else {
-            outRegister.setUserName(username);
+            outRegister.setUserName(member.getMemberName());
             return ResultUtil.success(outRegisterService.selectPage(outRegister));
         }
     }
@@ -98,7 +98,7 @@ public class OutRegisterController extends BaseCommonController {
      * @Param [outRegister]
      * @return com.camel.core.entity.Result
      */
-    @GetMapping
+    @RequestMapping("/outListExcel")
     @ResponseBody
     public void outListExcel(OutRegister outRegister, HttpServletResponse resp) throws Exception{
         PageInfo pageInfo = new PageInfo();
@@ -109,23 +109,23 @@ public class OutRegisterController extends BaseCommonController {
         for(int i=0;i<userList.size();i++){
             arr[i] = userList.get(i).getOrgDirector();
         }
-        if (Arrays.asList(arr).contains(username)){
+        if (Arrays.asList(arr).contains(member.getMemberName())){
             this.outRegisterService.selectPage(outRegister);
             List<OutRegister> list = pageInfo.getList();
             if(null!=list && list.size()>0){
                 String[] titles=new String[]{"日期","外出时间","回公司时间","姓名","部门","地点","外出事由","部门负责人签字"};
                 String[] attrs=new String[]{"outStart","outInterval","outEnd","userName","orgName","outPlace","outReason","orgDirector"};
-                HSSFWorkbook wb = PoiExcelUtil.createWorkbook("公司员工外出登记表（办公地/部门：           ）", titles,attrs, list, DateOperator.FORMAT_STR_WITH_TIME_S);
+                HSSFWorkbook wb = PoiExcelUtil.createWorkbook("公司员工外出登记表（办公地/部门：           ）", titles, attrs, list, DateOperator.FORMAT_STR_WITH_TIME_S);
                 PoiExcelUtil.write(wb, resp, "公司员工外出登记表");
             }
         }else{
-            outRegister.setUserName(username);
+            outRegister.setUserName(member.getMemberName());
             this.outRegisterService.selectPage(outRegister);
             List<OutRegister> list = pageInfo.getList();
             if(null!=list && list.size()>0){
                 String[] titles=new String[]{"日期","外出时间","回公司时间","姓名","部门","地点","外出事由","部门负责人签字"};
                 String[] attrs=new String[]{"outStart","outInterval","outEnd","userName","orgName","outPlace","outReason","orgDirector"};
-                HSSFWorkbook wb = PoiExcelUtil.createWorkbook("公司员工外出登记表（办公地/部门：           ）", titles,attrs, list, DateOperator.FORMAT_STR_WITH_TIME_S);
+                HSSFWorkbook wb = PoiExcelUtil.createWorkbook("公司员工外出登记表", titles, attrs, list, DateOperator.FORMAT_STR_WITH_TIME_S);
                 PoiExcelUtil.write(wb, resp, "公司员工外出登记表");
             }
         }
@@ -148,7 +148,7 @@ public class OutRegisterController extends BaseCommonController {
         try {
             outRegister.setUid(member.getId());
             outRegister.setUserName(username);
-            //暂时获取不到部门信息，先写一个定值
+            //暂时未设计部门表获取不到部门信息，先固定传值
             outRegister.setOrgId(2);
             outRegister.setOrgName("开发实施服务部");
             outRegister.setOrgDirector("许桦");
@@ -183,27 +183,8 @@ public class OutRegisterController extends BaseCommonController {
     @ResponseBody
     public Result editOutRegister(OutRegister outRegister, HttpServletRequest request){
         Result result = new Result();
-//        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-          String id = request.getParameter("id");
-//        String orgId = request.getParameter("orgId");
-//        String outStart = request.getParameter("outStart");
-//        String outInterval = request.getParameter("utInterval");
-//        String outEnd = request.getParameter("outEnd");
-//        String userName = request.getParameter("userName");
-//        String outPlace = request.getParameter("outPlace");
-//        String outReason = request.getParameter("outReason");
-//        String status = request.getParameter("status");
         try {
-            if (StringUtils.isNotBlank(id)) {
-                  outRegister.setId(Integer.valueOf(id));
-//                outRegister.setOrgId(Integer.valueOf(id));
-//                outRegister.setOutStart(sdf.parse(outStart));
-//                outRegister.setOutInterval(Integer.valueOf(outInterval));
-//                outRegister.setOutEnd(sdf.parse(outEnd));
-//                outRegister.setUserName(userName);
-//                outRegister.setOutPlace(outPlace);
-//                outRegister.setOutReason(outReason);
-//                outRegister.setStatus(status);
+            if (outRegister != null) {
                 this.outRegisterService.updateByPrimaryKeySelective(outRegister);
                 result.setMsg("修改成功！");
                 result.setSuccess(true);

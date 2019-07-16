@@ -22,5 +22,7 @@ public interface OutRegisterMapper extends BaseMapper<OutRegister> {
 
     List<OutRegister> outList(OutRegister outRegister);
 
+    List<OutRegister> selectByUid(Integer uid);
+
     int deleteById (Integer id);
 }

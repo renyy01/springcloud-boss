@@ -10,6 +10,8 @@ import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @author renyy
  * @version 1.0
@@ -53,4 +55,10 @@ public class OutRegisterImpl extends ServiceImpl<OutRegisterMapper, OutRegister>
         PageInfo pageInfo = PageHelper.startPage(outRegister.getPageNum(), outRegister.getPageSize()).doSelectPageInfo(()-> outRegisterMapper.outList(outRegister));
         return pageInfo;
     }
+
+    @Override
+    public List<OutRegister> selectByUid(Integer uid) {
+        return outRegisterMapper.selectByUid(uid);
+    }
+
 }

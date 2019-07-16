@@ -4,6 +4,8 @@ import com.baomidou.mybatisplus.service.IService;
 import com.camel.oa.model.OutRegister;
 import com.github.pagehelper.PageInfo;
 
+import java.util.List;
+
 public interface OutRegisterService extends IService<OutRegister> {
 
     //创建外出登记信息
@@ -20,4 +22,6 @@ public interface OutRegisterService extends IService<OutRegister> {
 
     //分页查询外出登记信息
     PageInfo<OutRegister> selectPage(OutRegister outRegister);
+
+    List<OutRegister> selectByUid(Integer uid);
 }

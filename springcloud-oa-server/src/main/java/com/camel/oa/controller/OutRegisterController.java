@@ -2,6 +2,7 @@ package com.camel.oa.controller;
 
 import com.baomidou.mybatisplus.service.IService;
 import com.camel.common.entity.Member;
+import com.camel.common.utils.DateOperator;
 import com.camel.common.utils.PoiExcelUtil;
 import com.camel.core.BaseProcessService;
 import com.camel.core.controller.BaseCommonController;
@@ -10,7 +11,9 @@ import com.camel.core.utils.ResultUtil;
 import com.camel.oa.model.OutRegister;
 import com.camel.oa.service.OutRegisterService;
 import com.camel.redis.utils.SessionContextUtils;
+import com.github.pagehelper.PageInfo;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +22,9 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.text.SimpleDateFormat;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -71,10 +76,15 @@ public class OutRegisterController extends BaseCommonController {
     @ResponseBody
     public Result outList(OutRegister outRegister){
         String username = (String) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-        //拿到当前用户的部门负责人，如果是同一个人则
-        if (username.equals(outRegister.getOrgDirector())){
+        Member member = (Member) SessionContextUtils.getInstance().currentUser(redisTemplate, username);
+        List<OutRegister> userList = outRegisterService.selectByUid(member.getId());
+        String []arr= null;
+        for(int i=0;i<userList.size();i++){
+            arr[i] = userList.get(i).getOrgDirector();
+        }
+        if (Arrays.asList(arr).contains(username)){
             return ResultUtil.success(outRegisterService.selectPage(outRegister));
-        }else{
+        }else {
             outRegister.setUserName(username);
             return ResultUtil.success(outRegisterService.selectPage(outRegister));
         }
@@ -90,29 +100,33 @@ public class OutRegisterController extends BaseCommonController {
      */
     @GetMapping
     @ResponseBody
-    public void outListExcel(OutRegister outRegister){
+    public void outListExcel(OutRegister outRegister, HttpServletResponse resp) throws Exception{
+        PageInfo pageInfo = new PageInfo();
         String username = (String) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-        //拿到当前用户的部门负责人，如果是同一个人则
-        if (username.equals(outRegister.getOrgDirector())){
-           List<OutRegister> list = null;
-           list.add(outRegister);
+        Member member = (Member) SessionContextUtils.getInstance().currentUser(redisTemplate, username);
+        List<OutRegister> userList = outRegisterService.selectByUid(member.getId());
+        String []arr= null;
+        for(int i=0;i<userList.size();i++){
+            arr[i] = userList.get(i).getOrgDirector();
+        }
+        if (Arrays.asList(arr).contains(username)){
+            this.outRegisterService.selectPage(outRegister);
+            List<OutRegister> list = pageInfo.getList();
             if(null!=list && list.size()>0){
                 String[] titles=new String[]{"日期","外出时间","回公司时间","姓名","部门","地点","外出事由","部门负责人签字"};
-                String[] attrs=new String[]{"pPlanName","whName","pStartDateStr","createTime"};
-
-                HSSFWorkbook wb = PoiExcelUtil.createWorkbook("公司员工外出登记表（办公地/部门：           ）", titles,attrs, list,DateOperator.FORMAT_STR_WITH_TIME_S);
+                String[] attrs=new String[]{"outStart","outInterval","outEnd","userName","orgName","outPlace","outReason","orgDirector"};
+                HSSFWorkbook wb = PoiExcelUtil.createWorkbook("公司员工外出登记表（办公地/部门：           ）", titles,attrs, list, DateOperator.FORMAT_STR_WITH_TIME_S);
                 PoiExcelUtil.write(wb, resp, "公司员工外出登记表");
             }
         }else{
             outRegister.setUserName(username);
-            List<OutRegister> list = null;
-            list.add(outRegister);
+            this.outRegisterService.selectPage(outRegister);
+            List<OutRegister> list = pageInfo.getList();
             if(null!=list && list.size()>0){
-                String[] titles=new String[]{"盘点计划名称","库房","计划盘点时间","计划创建时间"};
-                String[] attrs=new String[]{"pPlanName","whName","pStartDateStr","createTime"};
-
-                HSSFWorkbook wb = PoiExcelUtil.createWorkbook("盘点计划列表信息", titles,attrs, list,DateOperator.FORMAT_STR_WITH_TIME_S);
-                PoiExcelUtil.write(wb, resp, "盘点计划列表信息");
+                String[] titles=new String[]{"日期","外出时间","回公司时间","姓名","部门","地点","外出事由","部门负责人签字"};
+                String[] attrs=new String[]{"outStart","outInterval","outEnd","userName","orgName","outPlace","outReason","orgDirector"};
+                HSSFWorkbook wb = PoiExcelUtil.createWorkbook("公司员工外出登记表（办公地/部门：           ）", titles,attrs, list, DateOperator.FORMAT_STR_WITH_TIME_S);
+                PoiExcelUtil.write(wb, resp, "公司员工外出登记表");
             }
         }
     }
@@ -170,7 +184,7 @@ public class OutRegisterController extends BaseCommonController {
     public Result editOutRegister(OutRegister outRegister, HttpServletRequest request){
         Result result = new Result();
 //        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-//        String id = request.getParameter("id");
+          String id = request.getParameter("id");
 //        String orgId = request.getParameter("orgId");
 //        String outStart = request.getParameter("outStart");
 //        String outInterval = request.getParameter("utInterval");
@@ -180,8 +194,8 @@ public class OutRegisterController extends BaseCommonController {
 //        String outReason = request.getParameter("outReason");
 //        String status = request.getParameter("status");
         try {
-            if (StringUtils.isNotBlank(String.valueOf(outRegister.getId()))) {
-//                outRegister.setId(Integer.valueOf(id));
+            if (StringUtils.isNotBlank(id)) {
+                  outRegister.setId(Integer.valueOf(id));
 //                outRegister.setOrgId(Integer.valueOf(id));
 //                outRegister.setOutStart(sdf.parse(outStart));
 //                outRegister.setOutInterval(Integer.valueOf(outInterval));

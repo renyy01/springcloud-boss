@@ -213,4 +213,11 @@
     update out_register valid_flag = '0'
     where id = #{id,jdbcType=INTEGER}
   </update>
+  <select id="selectByUid" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select
+    <include refid="Base_Column_List" />
+    from out_register
+    where uid = #{uid,jdbcType=INTEGER}
+  </select>
+
 </mapper>

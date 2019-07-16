@@ -115,7 +115,7 @@ public class OutRegisterController extends BaseCommonController {
             if(null!=list && list.size()>0){
                 String[] titles=new String[]{"日期","外出时间","回公司时间","姓名","部门","地点","外出事由","部门负责人签字"};
                 String[] attrs=new String[]{"outStart","outInterval","outEnd","userName","orgName","outPlace","outReason","orgDirector"};
-                HSSFWorkbook wb = PoiExcelUtil.createWorkbook("公司员工外出登记表（办公地/部门：           ）", titles, attrs, list, DateOperator.FORMAT_STR_WITH_TIME_S);
+                HSSFWorkbook wb = PoiExcelUtil.createWorkbook("公司员工外出登记表", titles, attrs, list, DateOperator.FORMAT_STR_WITH_TIME_S);
                 PoiExcelUtil.write(wb, resp, "公司员工外出登记表");
             }
         }else{
@@ -202,7 +202,7 @@ public class OutRegisterController extends BaseCommonController {
 
     /**
      * @MethodName deleteByOutRegisterIds
-     * @Description 批量删除外出登记信息
+     * @Description 单条删除或批量删除外出登记信息
      * @Author renyy
      * @Date 2019/7/15 13:39
      * @Param [req]
@@ -233,30 +233,8 @@ public class OutRegisterController extends BaseCommonController {
     }
 
     /**
-     * @MethodName deleteById
-     * @Description 删除外出登记信息
-     * @Author renyy
-     * @Date 2019/7/15 13:40
-     * @Param [id]
-     * @return com.camel.core.entity.Result
-     */
-    @GetMapping("/deleteById/{id}")
-    public Result deleteById(@PathVariable Integer id) {
-        Result result = new Result();
-        try {
-            outRegisterService.deleteById(id);
-            result.setMsg("删除成功！");
-            result.setSuccess(true);
-        } catch (RuntimeException e) {
-            logger.error("删除失败：{}", e);
-            result.setMsg(e.getMessage());
-        }
-        return result;
-    }
-
-    /**
      * @MethodName selectById
-     * @Description 查看外出登记详情信息
+     * @Description 查看单条外出登记详情信息
      * @Author renyy
      * @Date 2019/7/15 14:29
      * @Param [id]

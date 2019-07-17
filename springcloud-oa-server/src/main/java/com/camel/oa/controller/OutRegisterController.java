@@ -78,45 +78,30 @@ public class OutRegisterController extends BaseCommonController {
         String username = (String) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         Member member = (Member) SessionContextUtils.getInstance().currentUser(redisTemplate, username);
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        if(StringUtils.isNotEmpty(request.getParameter("userName"))){
+            outRegister.setUserName(request.getParameter("userName"));
+        }
+        if(StringUtils.isNotEmpty(request.getParameter("deptId"))){
+            outRegister.setDeptId(Integer.valueOf(request.getParameter("deptId")));
+        }
+        if(StringUtils.isNotEmpty(request.getParameter("outPlace"))){
+            outRegister.setOutPlace(request.getParameter("outPlace"));
+        }
+        if(StringUtils.isNotEmpty(request.getParameter("outStart"))){
+            outRegister.setOutStart(sdf.parse(request.getParameter("outStart")));
+        }
+        if(StringUtils.isNotEmpty(request.getParameter("outEnd"))){
+            outRegister.setOutEnd(sdf.parse(request.getParameter("outEnd")));
+        }
         List<OutRegister> userList = outRegisterService.selectByUid(member.getId());
         String []arr= null;
         for(int i=0;i<userList.size();i++){
             arr[i] = userList.get(i).getDeptDirector();
         }
         if (Arrays.asList(arr).contains(member.getMemberName())){
-            if(StringUtils.isNotEmpty(request.getParameter("userName"))){
-                outRegister.setUserName(request.getParameter("userName"));
-            }
-            if(StringUtils.isNotEmpty(request.getParameter("deptId"))){
-                outRegister.setDeptId(Integer.valueOf(request.getParameter("deptId")));
-            }
-            if(StringUtils.isNotEmpty(request.getParameter("outPlace"))){
-                outRegister.setOutPlace(request.getParameter("outPlace"));
-            }
-            if(StringUtils.isNotEmpty(request.getParameter("outStart"))){
-                outRegister.setOutStart(sdf.parse(request.getParameter("outStart")));
-            }
-            if(StringUtils.isNotEmpty(request.getParameter("outEnd"))){
-                outRegister.setOutEnd(sdf.parse(request.getParameter("outEnd")));
-            }
             return ResultUtil.success(outRegisterService.selectPage(outRegister));
         }else {
             outRegister.setUserName(member.getMemberName());
-            if(StringUtils.isNotEmpty(request.getParameter("userName"))){
-                outRegister.setUserName(request.getParameter("userName"));
-            }
-            if(StringUtils.isNotEmpty(request.getParameter("deptId"))){
-                outRegister.setDeptId(Integer.valueOf(request.getParameter("deptId")));
-            }
-            if(StringUtils.isNotEmpty(request.getParameter("outPlace"))){
-                outRegister.setOutPlace(request.getParameter("outPlace"));
-            }
-            if(StringUtils.isNotEmpty(request.getParameter("outStart"))){
-                outRegister.setOutStart(sdf.parse(request.getParameter("outStart")));
-            }
-            if(StringUtils.isNotEmpty(request.getParameter("outEnd"))){
-                outRegister.setOutEnd(sdf.parse(request.getParameter("outEnd")));
-            }
             return ResultUtil.success(outRegisterService.selectPage(outRegister));
         }
     }
@@ -133,30 +118,30 @@ public class OutRegisterController extends BaseCommonController {
     @ResponseBody
     public void outListExcel(OutRegister outRegister,HttpServletRequest request, HttpServletResponse resp) throws Exception{
         PageInfo pageInfo = new PageInfo();
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String username = (String) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         Member member = (Member) SessionContextUtils.getInstance().currentUser(redisTemplate, username);
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        if(StringUtils.isNotEmpty(request.getParameter("userName"))){
+            outRegister.setUserName(request.getParameter("userName"));
+        }
+        if(StringUtils.isNotEmpty(request.getParameter("deptId"))){
+            outRegister.setDeptId(Integer.valueOf(request.getParameter("deptId")));
+        }
+        if(StringUtils.isNotEmpty(request.getParameter("outPlace"))){
+            outRegister.setOutPlace(request.getParameter("outPlace"));
+        }
+        if(StringUtils.isNotEmpty(request.getParameter("outStart"))){
+            outRegister.setOutStart(sdf.parse(request.getParameter("outStart")));
+        }
+        if(StringUtils.isNotEmpty(request.getParameter("outEnd"))){
+            outRegister.setOutEnd(sdf.parse(request.getParameter("outEnd")));
+        }
         List<OutRegister> userList = outRegisterService.selectByUid(member.getId());
         String []arr= null;
         for(int i=0;i<userList.size();i++){
             arr[i] = userList.get(i).getDeptDirector();
         }
         if (Arrays.asList(arr).contains(member.getMemberName())){
-            if(StringUtils.isNotEmpty(request.getParameter("userName"))){
-                outRegister.setUserName(request.getParameter("userName"));
-            }
-            if(StringUtils.isNotEmpty(request.getParameter("deptId"))){
-                outRegister.setDeptId(Integer.valueOf(request.getParameter("deptId")));
-            }
-            if(StringUtils.isNotEmpty(request.getParameter("outPlace"))){
-                outRegister.setOutPlace(request.getParameter("outPlace"));
-            }
-            if(StringUtils.isNotEmpty(request.getParameter("outStart"))){
-                outRegister.setOutStart(sdf.parse(request.getParameter("outStart")));
-            }
-            if(StringUtils.isNotEmpty(request.getParameter("outEnd"))){
-                outRegister.setOutEnd(sdf.parse(request.getParameter("outEnd")));
-            }
             this.outRegisterService.selectPage(outRegister);
             List<OutRegister> list = pageInfo.getList();
             if(null!=list && list.size()>0){
@@ -167,21 +152,6 @@ public class OutRegisterController extends BaseCommonController {
             }
         }else{
             outRegister.setUserName(member.getMemberName());
-            if(StringUtils.isNotEmpty(request.getParameter("userName"))){
-                outRegister.setUserName(request.getParameter("userName"));
-            }
-            if(StringUtils.isNotEmpty(request.getParameter("deptId"))){
-                outRegister.setDeptId(Integer.valueOf(request.getParameter("deptId")));
-            }
-            if(StringUtils.isNotEmpty(request.getParameter("outPlace"))){
-                outRegister.setOutPlace(request.getParameter("outPlace"));
-            }
-            if(StringUtils.isNotEmpty(request.getParameter("outStart"))){
-                outRegister.setOutStart(sdf.parse(request.getParameter("outStart")));
-            }
-            if(StringUtils.isNotEmpty(request.getParameter("outEnd"))){
-                outRegister.setOutEnd(sdf.parse(request.getParameter("outEnd")));
-            }
             this.outRegisterService.selectPage(outRegister);
             List<OutRegister> list = pageInfo.getList();
             if(null!=list && list.size()>0){

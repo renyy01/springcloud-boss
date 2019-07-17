@@ -4,21 +4,21 @@
   <resultMap id="BaseResultMap" type="com.camel.oa.model.OutRegister" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="uid" property="uid" jdbcType="INTEGER" />
-    <result column="org_id" property="orgId" jdbcType="INTEGER" />
+    <result column="dept_id" property="deptId" jdbcType="INTEGER" />
     <result column="out_start" property="outStart" jdbcType="TIMESTAMP" />
     <result column="out_interval" property="outInterval" jdbcType="INTEGER" />
     <result column="out_end" property="outEnd" jdbcType="TIMESTAMP" />
     <result column="user_name" property="userName" jdbcType="VARCHAR" />
-    <result column="org_name" property="orgName" jdbcType="VARCHAR" />
+    <result column="dept_name" property="deptName" jdbcType="VARCHAR" />
     <result column="out_place" property="outPlace" jdbcType="VARCHAR" />
     <result column="out_reason" property="outReason" jdbcType="VARCHAR" />
     <result column="status" property="status" jdbcType="VARCHAR" />
-    <result column="org_director" property="orgDirector" jdbcType="VARCHAR" />
+    <result column="dept_director" property="deptDirector" jdbcType="VARCHAR" />
     <result column="valid_flag" property="validFlag" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Base_Column_List" >
-    id, uid, org_id, out_start, out_interval, out_end, user_name, org_name, out_place, 
-    out_reason, status, org_director, valid_flag
+    id, uid, dept_id, out_start, out_interval, out_end, user_name, dept_name, out_place, 
+    out_reason, status, dept_director, valid_flag
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
@@ -31,15 +31,15 @@
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.camel.oa.model.OutRegister" >
-    insert into out_register (id, uid, org_id, 
+    insert into out_register (id, uid, dept_id, 
       out_start, out_interval, out_end, 
-      user_name, org_name, out_place, 
-      out_reason, status, org_director, valid_flag
+      user_name, dept_name, out_place, 
+      out_reason, status, dept_director, valid_flag
       )
-    values (#{id,jdbcType=INTEGER}, #{uid,jdbcType=INTEGER}, #{orgId,jdbcType=INTEGER}, 
+    values (#{id,jdbcType=INTEGER}, #{uid,jdbcType=INTEGER}, #{deptId,jdbcType=INTEGER}, 
       #{outStart,jdbcType=TIMESTAMP}, #{outInterval,jdbcType=INTEGER}, #{outEnd,jdbcType=TIMESTAMP}, 
-      #{userName,jdbcType=VARCHAR}, #{orgName,jdbcType=VARCHAR}, #{outPlace,jdbcType=VARCHAR}, 
-      #{outReason,jdbcType=VARCHAR}, #{status,jdbcType=VARCHAR}, #{orgDirector,jdbcType=VARCHAR},
+      #{userName,jdbcType=VARCHAR}, #{deptName,jdbcType=VARCHAR}, #{outPlace,jdbcType=VARCHAR}, 
+      #{outReason,jdbcType=VARCHAR}, #{status,jdbcType=VARCHAR}, #{deptDirector,jdbcType=VARCHAR},
       #{validFlag,jdbcType=VARCHAR}
       )
   </insert>
@@ -52,8 +52,8 @@
       <if test="uid != null" >
         uid,
       </if>
-      <if test="orgId != null" >
-        org_id,
+      <if test="deptId != null" >
+        dept_id,
       </if>
       <if test="outStart != null" >
         out_start,
@@ -67,8 +67,8 @@
       <if test="userName != null" >
         user_name,
       </if>
-      <if test="orgName != null" >
-        org_name,
+      <if test="deptName != null" >
+        dept_name,
       </if>
       <if test="outPlace != null" >
         out_place,
@@ -79,8 +79,8 @@
       <if test="status != null" >
         status,
       </if>
-      <if test="orgDirector != null" >
-        org_director,
+      <if test="deptDirector != null" >
+        dept_director,
       </if>
       <if test="validFlag != null" >
         valid_flag,
@@ -93,8 +93,8 @@
       <if test="uid != null" >
         #{uid,jdbcType=INTEGER},
       </if>
-      <if test="orgId != null" >
-        #{orgId,jdbcType=INTEGER},
+      <if test="deptId != null" >
+        #{deptId,jdbcType=INTEGER},
       </if>
       <if test="outStart != null" >
         #{outStart,jdbcType=TIMESTAMP},
@@ -108,8 +108,8 @@
       <if test="userName != null" >
         #{userName,jdbcType=VARCHAR},
       </if>
-      <if test="orgName != null" >
-        #{orgName,jdbcType=VARCHAR},
+      <if test="deptName != null" >
+        #{deptName,jdbcType=VARCHAR},
       </if>
       <if test="outPlace != null" >
         #{outPlace,jdbcType=VARCHAR},
@@ -120,8 +120,8 @@
       <if test="status != null" >
         #{status,jdbcType=VARCHAR},
       </if>
-      <if test="orgDirector != null" >
-        #{orgDirector,jdbcType=VARCHAR},
+      <if test="deptDirector != null" >
+        #{deptDirector,jdbcType=VARCHAR},
       </if>
       <if test="validFlag != null" >
         #{validFlag,jdbcType=VARCHAR},
@@ -134,8 +134,8 @@
       <if test="uid != null" >
         uid = #{uid,jdbcType=INTEGER},
       </if>
-      <if test="orgId != null" >
-        org_id = #{orgId,jdbcType=INTEGER},
+      <if test="deptId != null" >
+        dept_id = #{deptId,jdbcType=INTEGER},
       </if>
       <if test="outStart != null" >
         out_start = #{outStart,jdbcType=TIMESTAMP},
@@ -149,8 +149,8 @@
       <if test="userName != null" >
         user_name = #{userName,jdbcType=VARCHAR},
       </if>
-      <if test="orgName != null" >
-        org_name = #{orgName,jdbcType=VARCHAR},
+      <if test="deptName != null" >
+        dept_name = #{deptName,jdbcType=VARCHAR},
       </if>
       <if test="outPlace != null" >
         out_place = #{outPlace,jdbcType=VARCHAR},
@@ -161,8 +161,8 @@
       <if test="status != null" >
         status = #{status,jdbcType=VARCHAR},
       </if>
-      <if test="orgDirector != null" >
-        org_director = #{orgDirector,jdbcType=VARCHAR},
+      <if test="deptDirector != null" >
+        dept_director = #{deptDirector,jdbcType=VARCHAR},
       </if>
       <if test="validFlag != null" >
         valid_flag = #{validFlag,jdbcType=VARCHAR},
@@ -173,16 +173,16 @@
   <update id="updateByPrimaryKey" parameterType="com.camel.oa.model.OutRegister" >
     update out_register
     set uid = #{uid,jdbcType=INTEGER},
-      org_id = #{orgId,jdbcType=INTEGER},
+      dept_id = #{deptId,jdbcType=INTEGER},
       out_start = #{outStart,jdbcType=TIMESTAMP},
       out_interval = #{outInterval,jdbcType=INTEGER},
       out_end = #{outEnd,jdbcType=TIMESTAMP},
       user_name = #{userName,jdbcType=VARCHAR},
-      org_name = #{orgName,jdbcType=VARCHAR},
+      dept_name = #{deptName,jdbcType=VARCHAR},
       out_place = #{outPlace,jdbcType=VARCHAR},
       out_reason = #{outReason,jdbcType=VARCHAR},
       status = #{status,jdbcType=VARCHAR},
-      org_director = #{orgDirector,jdbcType=VARCHAR},
+      dept_director = #{deptDirector,jdbcType=VARCHAR},
       valid_flag = #{validFlag,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
@@ -193,11 +193,11 @@
     FROM out_register
     <where>
      valid_flag = '1'
-    <if test="user_name != null and user_name != ''">
+    <if test="userName != null and userName != ''">
       AND user_name LIKE CONCAT('%', #{userName}, '%')
     </if>
-    <if test="user_name != null and user_name != ''">
-      AND org_id = #{orgId}
+    <if test="deptId != null and deptId != ''">
+      AND dept_id = #{deptId}
     </if>
 <!--    <if test="ids !=null">-->
 <!--      AND id in-->

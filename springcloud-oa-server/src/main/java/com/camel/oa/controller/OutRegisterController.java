@@ -23,7 +23,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.List;
 
@@ -80,7 +79,7 @@ public class OutRegisterController extends BaseCommonController {
         List<OutRegister> userList = outRegisterService.selectByUid(member.getId());
         String []arr= null;
         for(int i=0;i<userList.size();i++){
-            arr[i] = userList.get(i).getOrgDirector();
+            arr[i] = userList.get(i).getDeptDirector();
         }
         if (Arrays.asList(arr).contains(member.getMemberName())){
             return ResultUtil.success(outRegisterService.selectPage(outRegister));
@@ -107,14 +106,14 @@ public class OutRegisterController extends BaseCommonController {
         List<OutRegister> userList = outRegisterService.selectByUid(member.getId());
         String []arr= null;
         for(int i=0;i<userList.size();i++){
-            arr[i] = userList.get(i).getOrgDirector();
+            arr[i] = userList.get(i).getDeptDirector();
         }
         if (Arrays.asList(arr).contains(member.getMemberName())){
             this.outRegisterService.selectPage(outRegister);
             List<OutRegister> list = pageInfo.getList();
             if(null!=list && list.size()>0){
                 String[] titles=new String[]{"日期","外出时间","回公司时间","姓名","部门","地点","外出事由","部门负责人签字"};
-                String[] attrs=new String[]{"outStart","outInterval","outEnd","userName","orgName","outPlace","outReason","orgDirector"};
+                String[] attrs=new String[]{"outStart","outInterval","outEnd","userName","deptName","outPlace","outReason","deptDirector"};
                 HSSFWorkbook wb = PoiExcelUtil.createWorkbook("公司员工外出登记表", titles, attrs, list, DateOperator.FORMAT_STR_WITH_TIME_S);
                 PoiExcelUtil.write(wb, resp, "公司员工外出登记表");
             }
@@ -124,7 +123,7 @@ public class OutRegisterController extends BaseCommonController {
             List<OutRegister> list = pageInfo.getList();
             if(null!=list && list.size()>0){
                 String[] titles=new String[]{"日期","外出时间","回公司时间","姓名","部门","地点","外出事由","部门负责人签字"};
-                String[] attrs=new String[]{"outStart","outInterval","outEnd","userName","orgName","outPlace","outReason","orgDirector"};
+                String[] attrs=new String[]{"outStart","outInterval","outEnd","userName","deptName","outPlace","outReason","deptDirector"};
                 HSSFWorkbook wb = PoiExcelUtil.createWorkbook("公司员工外出登记表", titles, attrs, list, DateOperator.FORMAT_STR_WITH_TIME_S);
                 PoiExcelUtil.write(wb, resp, "公司员工外出登记表");
             }
@@ -147,11 +146,11 @@ public class OutRegisterController extends BaseCommonController {
         Member member = (Member) SessionContextUtils.getInstance().currentUser(redisTemplate, username);
         try {
             outRegister.setUid(member.getId());
-            outRegister.setUserName(username);
+            outRegister.setUserName(member.getMemberName());
             //暂时未设计部门表获取不到部门信息，先固定传值
-            outRegister.setOrgId(2);
-            outRegister.setOrgName("开发实施服务部");
-            outRegister.setOrgDirector("许桦");
+            outRegister.setDeptId(2);
+            outRegister.setDeptName("开发实施服务部");
+            outRegister.setDeptDirector("许桦");
             outRegister.setStatus("0");
             outRegister.setValidFlag("1");
             int i = outRegisterService.insertSelective(outRegister);
@@ -221,15 +220,17 @@ public class OutRegisterController extends BaseCommonController {
                 }
                 result.setMsg("删除成功！");
                 result.setSuccess(true);
+                return result;
             }else {
                 result.setMsg("删除失败！");
                 result.setSuccess(false);
+                return result;
             }
         } catch (RuntimeException e) {
             logger.error("删除失败：{}", e);
             result.setMsg(e.getMessage());
+            return result;
         }
-        return result;
     }
 
     /**

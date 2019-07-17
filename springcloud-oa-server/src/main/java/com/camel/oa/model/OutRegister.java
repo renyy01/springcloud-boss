@@ -25,7 +25,7 @@ public class OutRegister extends BaseProcessPaginationEntity implements Serializ
     /**
      * 部门id
      */
-    private Integer orgId;
+    private Integer deptId;
     /**
      * 外出开始时间
      */
@@ -45,7 +45,7 @@ public class OutRegister extends BaseProcessPaginationEntity implements Serializ
     /**
      * 部门名称
      */
-    private String orgName;
+    private String deptName;
     /**
      * 外出地点
      */
@@ -61,7 +61,7 @@ public class OutRegister extends BaseProcessPaginationEntity implements Serializ
     /**
      * 部门负责人
      */
-    private String orgDirector;
+    private String deptDirector;
     /**
      * 是否有效标识
      */
@@ -72,16 +72,16 @@ public class OutRegister extends BaseProcessPaginationEntity implements Serializ
         return "OutRegister{" +
                 "id=" + id +
                 ", uid=" + uid +
-                ", orgId=" + orgId +
+                ", deptId=" + deptId +
                 ", outStart=" + outStart +
                 ", outInterval=" + outInterval +
                 ", outEnd=" + outEnd +
                 ", userName='" + userName + '\'' +
-                ", orgName='" + orgName + '\'' +
+                ", deptName='" + deptName + '\'' +
                 ", outPlace='" + outPlace + '\'' +
                 ", outReason='" + outReason + '\'' +
                 ", status='" + status + '\'' +
-                ", orgDirector='" + orgDirector + '\'' +
+                ", deptDirector='" + deptDirector + '\'' +
                 ", validFlag='" + validFlag + '\'' +
                 '}';
     }
